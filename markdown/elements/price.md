@@ -1,5 +1,5 @@
 ---
-slug: "/Price"
+slug: "/price"
 date: "2019-05-04"
 title: "Elements > Price"
 ---

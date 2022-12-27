@@ -1,5 +1,5 @@
 ---
-slug: "/Demo Ui"
+slug: "/demo-ui"
 date: "2019-05-04"
 title: "Pages > demo-ui"
 ---

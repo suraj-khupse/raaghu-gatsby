@@ -1,5 +1,5 @@
 ---
-slug: "/Accordion"
+slug: "/accordion"
 date: "2019-05-04"
 title: "Elements > Accordion"
 ---

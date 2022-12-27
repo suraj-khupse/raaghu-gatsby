@@ -1,5 +1,5 @@
 ---
-slug: "/Rating"
+slug: "/rating"
 date: "2019-05-04"
 title: "Elements > Rating"
 ---

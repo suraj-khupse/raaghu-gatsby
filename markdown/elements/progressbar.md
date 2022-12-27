@@ -1,5 +1,5 @@
 ---
-slug: "/Progressbar"
+slug: "/progressbar"
 date: "2019-05-04"
 title: "Elements > Progressbar"
 ---

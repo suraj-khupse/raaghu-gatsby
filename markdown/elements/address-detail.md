@@ -1,5 +1,5 @@
 ---
-slug: "/Address-Detail"
+slug: "/address-detail"
 date: "2019-05-04"
 title: "Elements > Address-Detail"
 ---

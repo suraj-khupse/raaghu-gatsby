@@ -1,5 +1,5 @@
 ---
-slug: "/Product-image"
+slug: "/product-image"
 date: "2019-05-04"
 title: "Elements > Product-image"
 ---

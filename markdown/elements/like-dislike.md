@@ -1,5 +1,5 @@
 ---
-slug: "/Like-Dislike"
+slug: "/like-dislike"
 date: "2019-05-04"
 title: "Elements > Like-Dislike"
 ---
