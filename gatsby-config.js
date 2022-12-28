@@ -19,14 +19,14 @@ module.exports = {
       //access elements
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `../projects/libs/rds-elements/src`,
+        path: `./markdown/elements`,
       },
     },
     {
       //access Components
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `../projects/rds-components/src/app`,
+        path: `./markdown/components`,
       },
     },
     {
@@ -34,31 +34,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown`,
-        path: `../projects/libs/rds-elements/src`,
-      },
-    },
-    {
-      //access Components Markdown file
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown`,
-        path: `../projects/rds-components/src/app`,
-      },
-    },
-    {
-      //access Pages Markdown file
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown`,
-        path: `../projects`,
-      },
-    },    
-    {
-      //access Pages
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `Pages`,
-        path: `../projects`,
+        path: `./markdown/pages`,
       },
     },
     {
@@ -66,7 +42,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown`,
-        path: `../projects`,
+        path: `./markdown`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -93,13 +69,13 @@ module.exports = {
         icon: `src/images/logo/raaghu-mascot.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `../projects/rds-components/src/app`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `markdown-pages`,
+    //     path: ``,
+    //   },
+    // },
     `gatsby-transformer-remark`,
     `gatsby-plugin-catch-links`,
     {

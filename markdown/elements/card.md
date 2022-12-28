@@ -1,5 +1,5 @@
 ---
-slug: "/Card"
+slug: "/card"
 date: "2019-05-04"
 title: "Elements > Card"
 ---

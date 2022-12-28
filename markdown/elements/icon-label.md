@@ -1,5 +1,5 @@
 ---
-slug: "/Icon-Label"
+slug: "/icon-Label"
 date: "2019-05-04"
 title: "Elements > Icon-Label"
 ---

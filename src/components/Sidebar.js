@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link, useStaticQuery, graphql,  } from "gatsby";
 import elements from "../images/logo/element-icon1.svg";
 import components from "../images/logo/comp-icon.svg";
 import pages from "../images/logo/page.svg";
@@ -70,76 +70,38 @@ const Sidebar = (activeData) => {
         nodes {
           frontmatter {
             slug
+            title
+            date
           }
         }
+      }
+      allFile(filter: {name: {}}) {
+       edges {
+         node {
+           name
+        }
+       }
       }
     }
   `);
 
 
-  const elementsList = JSON.parse(JSON.stringify(data.allDirectory.nodes));
-  let chartList = [];
-  elementsList.forEach((item) => {
-    if (item.name.includes("rds-chart")) {
-      const _item = {
-        name: item.name,
-        url: item.name.substring(4),
-        displayName: item.name.substring(4).replace(/-/g, " "),
-      };
-      chartList.push(_item);
+  const elementsList = JSON.parse(JSON.stringify(data.allMarkdownRemark.nodes));
 
-    }
-  });
-
-
-  const componentsList = [];
-  const componentsExcludesList = ["-shimmer", "nents", "client-basics", "demoui", "other-settings","edition-table","dynamic-enity-properties","tenant-basic-profile-right","tenant-features","user-basic-profile-right"];
-  elementsList.forEach((item) => {
-    if (
-      item.name.includes("rds-comp") &&
-      !componentsExcludesList.some((element) => item.name.includes(element))
-    ) {
-      const _item = {
-        name: item.name,
-        url: item.name.substring(4),
-        displayName: item.name.substring(9).replace(/-/g, " "),
-      };
-      componentsList.push(_item);
-    }
-  });
-
-  componentsList.sort((a, b) => {
-    let fa = a.name.toLowerCase(),
-      fb = b.name.toLowerCase();
-    if (fa < fb) {
-      return -1;
-    }
-    if (fa > fb) {
-      return 1;
-    }
-    return 0;
-  });
 
   var elementsLists = [];
-  var elementsExcludesList = ["elements", "calendar", "rds-page-", "edition", "cookieconsent"]
   elementsList.forEach((item) => {
-    if (
-      item.name.includes("rds-") &&
-      !componentsExcludesList.some((element) => item.name.includes(element)) &&
-      !componentsList.find((x) => x.name === item.name) &&
-      !elementsExcludesList.some((element) => item.name.includes(element)) &&
-      !chartList.find((x) => x.name === item.name)
-    ) {
+    if (item.frontmatter.title.includes("Elements > ") ){
       const _item = {
-        name: item.name,
-        url: item.name.substring(4),
-        displayName: item.name.substring(4).replace(/-/g, " "),
-      };
+           url: item.frontmatter.slug,
+           displayName: item.frontmatter.title.substring(11).replace(/-/g, " "),
+            };
       elementsLists.push(_item);
     }
-  });
+    }
+  );
 
-  elementsLists.sort((a, b) => {
+    elementsLists.sort((a, b) => {
     let fa = a.displayName.toLowerCase(),
       fb = b.displayName.toLowerCase();
     if (fa < fb) {
@@ -151,38 +113,63 @@ const Sidebar = (activeData) => {
     return 0;
   });
 
-
-  // pages
-  const pageLists = [];
-  // find out pages names.
-  const pageexcludesList = [
-    "demo-ui","careers","contact-us" ,"forgot-password","frequently-asked-questions","login","member-activity",
-    "monthly-summary","order-details","order-summary","page-not-found","product","product-details","profile-settings",
-    "subscription","tenant-new","store-front"
-  ];
+  var chartList = [];
   elementsList.forEach((item) => {
-    if (
-      item.name.includes("rds-page-") &&
-      !pageexcludesList.some((element) => item.name.includes(element))) {
+    if (item.frontmatter.title.includes("Charts > ")) {
       const _item = {
-        name: item.name,
-        url: item.name.substring(4),
-        displayName: item.name.substring(8).replace(/-/g, " "),
+           url: item.frontmatter.slug,
+           displayName: item.frontmatter.title.substring(9).replace(/-/g, " "),
       };
-      pageLists.push(_item);
+      chartList.push(_item);
+
     }
   });
 
+  var compList = [];
+  elementsList.forEach((item)=>{
+    if(item.frontmatter.title.includes("Components > ")){
+      const _item = {
+        url: item.frontmatter.slug,
+        displayName: item.frontmatter.title.substring(12).replace(/-/g, " "),
+      };
+      compList.push(_item);
+    }
+  });
 
-  pageLists.sort((a, b) => {
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
+  compList.sort((a, b) => {
+    let fa = a.displayName.toLowerCase(),
+      fb = b.displayName.toLowerCase();
+    if (fa < fb) {
       return -1;
     }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
+    if (fa > fb) {
       return 1;
     }
     return 0;
   });
+
+  const pageLists = [];
+  elementsList.forEach((item) => {
+    if (item.frontmatter.title.includes("Pages > ")) {
+      const _item = {
+        url: item.frontmatter.slug,
+        displayName: item.frontmatter.title.substring(8).replace(/-/g, " "),
+      };
+      pageLists.push(_item);
+    }
+  });
+  pageLists.sort((a, b) => {
+    let fa = a.displayName.toLowerCase(),
+      fb = b.displayName.toLowerCase();
+    if (fa < fb) {
+      return -1;
+    }
+    if (fa > fb) {
+      return 1;
+    }
+    return 0;
+  });
+  
   function onToggle(type) {
     var btnelement = document.getElementById('element-toggle');
     var elementCollapse = document.getElementById('element-collapse');
@@ -208,7 +195,7 @@ const Sidebar = (activeData) => {
         elementExpanded = !elementExpanded
         ChartExpanded = false;
         componentExpanded = false;
-        pageExpanded = false;
+        // pageExpanded = false;
 
         if (chartCollapse) {
           chartCollapse.classList.remove('show');
@@ -351,9 +338,9 @@ const Sidebar = (activeData) => {
             </button>
             <div className={`collapse ${elementExpanded ? 'show' : 'hide'}`} id="element-collapse" >
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 text-capitalize">
-                {elementsLists.map((node, index) => (
-                  <li key={node.url + index} className={path === node.url ? 'active' : ''} id={node.url}>
-                    <Link className="nav-link rounded" href={node.url}>{node.displayName}</Link>
+                {elementsLists.map((nodes, index) => (
+                  <li key={nodes + index} className={path === nodes ? 'active' : ''}>
+                    <Link className="nav-link rounded" href={nodes.url}>{nodes.displayName}</Link>
                   </li>
                 ))}
               </ul>
@@ -390,7 +377,7 @@ const Sidebar = (activeData) => {
 
             <div className={`collapse ${componentExpanded ? 'show' : 'hide'}`} id="component-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 text-capitalize">
-                {componentsList.map((node) => (
+                {compList.map((node) => (
                   <li key={node.url} className={path === node.url ? 'active' : ''} id={node.url} >
                     <Link className="nav-link rounded" href={node.url} >{node.displayName}</Link>
                   </li>

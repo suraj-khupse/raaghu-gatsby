@@ -1,5 +1,5 @@
 ---
-slug: "/Label"
+slug: "/label"
 date: "2019-05-04"
 title: "Elements > Label"
 ---

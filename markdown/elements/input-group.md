@@ -1,5 +1,5 @@
 ---
-slug: "/Input-Group"
+slug: "/input-group"
 date: "2019-05-04"
 title: "Elements > Input-Group"
 ---

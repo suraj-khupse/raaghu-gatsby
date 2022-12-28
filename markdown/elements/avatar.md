@@ -1,5 +1,5 @@
 ---
-slug: "/Avatar"
+slug: "/avatar"
 date: "2019-05-04"
 title: "Elements > Avatar"
 ---

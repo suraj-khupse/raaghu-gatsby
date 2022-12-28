@@ -1,5 +1,5 @@
 ---
-slug: "/Nav-bar"
+slug: "/nav-bar"
 date: "2019-05-04"
 title: "Elements > Nav-bar"
 ---
