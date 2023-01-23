@@ -41,15 +41,13 @@ title: "Elements > Carousel"
 <div class="row m-0">
 
 ```html
-   <div class="col-md-12">
-  <rds-carousel
+<rds-carousel
   [crossFade]="true"
   [indicators]="true"
   [controls]="true"
   display_type="basic"
   [imageItem]="imageItem"
 ></rds-carousel>
-</div>
 ```
 </div>
 </div>
@@ -60,7 +58,7 @@ title: "Elements > Carousel"
   </section>
 
   <section class="py-4">
-    <h6>Advanced</h6>
+    <h6>Advance</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -88,13 +86,11 @@ title: "Elements > Carousel"
 <div class="row m-0">
 
 ```html
-   <div class="col-md-12">
-  <rds-carousel
+<rds-carousel
   [crossFade]="true"
-  [darkVariant]="true"
   [indicators]="true"
   [controls]="true"
-  display_type="advanced"
+  display_type="advance"
   [carousalItem]="carousalItem"
 ></rds-carousel>
 </div>

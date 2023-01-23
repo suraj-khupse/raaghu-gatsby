@@ -45,7 +45,13 @@ title: "Elements > Pagination"
 <div class="row m-0">
 
 ```html
-<rds-pagination [totalRecords]="10" [recordsPerPage]="1"></rds-pagination>
+<rds-pagination
+  [totalRecords]="10"
+  [recordsPerPage]="1"
+  size="small"
+  alignmentType="start"
+  role="Basic"
+></rds-pagination>
 ```
 </div>
 </div>
@@ -87,6 +93,8 @@ title: "Elements > Pagination"
 <rds-pagination
   [totalRecords]="101"
   [recordsPerPage]="5"
+  size="small"
+  alignmentType="start"
   role="Advanced"
 ></rds-pagination>
 ```

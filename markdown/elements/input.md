@@ -44,26 +44,12 @@ title: "Elements > Input"
 
 ```html
 <rds-input
-size="default"
-[disabled]="false"
-Title=""
-TitleType="text"
-[readonly]="false"
-value=""
-inputType="text"
-placeholder="Add placeholder"
-inputName="Field_name"
-icon=""
-iconCursor="pointer"
-iconHeight="16px"
-iconWidth="16px"
-[iconStroke]="true"
-[iconFill]="false"
-iconOpacity="0.4"
-[isRequired]="false"
-tooltipTitle=""
-tooltipPlacement="bottom">
-</rds-input>
+  size="medium"
+  label="Label"
+  inputType="text"
+  placeholder="Add placeholder"
+  InputId=""
+></rds-input>
 ```
 </div>
 </div>
@@ -102,27 +88,60 @@ tooltipPlacement="bottom">
 <div class="row m-0">
 
 ```html
+  <rds-input
+      [label]="label"
+      [placeholder]="placeholder"
+      [inputType]="inputType"
+      [size]="size"
+      [tooltipTitle]="tooltipTitle"
+      [tooltipPlacement]="tooltipPlacement"
+    ></rds-input>
+```
+</div>
+</div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- input with disabled -->
+<section class="py-4">
+    <h6>Disabled</h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#Previewtooltip" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#Angulartooltip" type="button" role="tab" aria-controls="AngularBasic" aria-selec0ted="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="Previewtooltip" role="tabpanel" aria-labelledby="PreviewBasic-tab">
+         <div class="contents bg-light p-5">
+              <div class="row">
+               <img src="/images/input-disabled.png" class="img-thumbnail w-100">
+              </div>
+                       
+  </div>
+        </div>
+        <div class="tab-pane fade show" id="Angulartooltip" role="tabpanel" aria-labelledby="AngularBasic-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
 <rds-input
-size="default"
-[disabled]="false"
-Title=""
-TitleType="text"
-[readonly]="false"
-value=""
-inputType="text"
-placeholder="Add placeholder"
-inputName="Field_name"
-icon=""
-iconCursor="pointer"
-iconHeight="16px"
-iconWidth="16px"
-[iconStroke]="true"
-[iconFill]="false"
-iconOpacity="0.4"
-[isRequired]="false"
-tooltipTitle=""
-tooltipPlacement="bottom">
-</rds-input>
+  size="medium"
+  [disabled]="true"
+  label="Label"
+  inputType="text"
+  placeholder="Add placeholder"
+  InputId=""
+></rds-input>
 ```
 </div>
 </div>
@@ -151,6 +170,122 @@ tooltipPlacement="bottom">
                               </div>
                         </div>
                      </section>
+
+
+
+
+
+ <!-- input with Readonly -->
+<section class="py-4">
+    <h6>Readonly</h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#Previewtooltip" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#Angulartooltip" type="button" role="tab" aria-controls="AngularBasic" aria-selec0ted="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="Previewtooltip" role="tabpanel" aria-labelledby="PreviewBasic-tab">
+         <div class="contents bg-light p-5">
+              <div class="row">
+               <img src="/images/input-disabled.png" class="img-thumbnail w-100">
+              </div>
+                       
+  </div>
+        </div>
+        <div class="tab-pane fade show" id="Angulartooltip" role="tabpanel" aria-labelledby="AngularBasic-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<rds-input
+  size="medium"
+  label="Label"
+  [readonly]="true"
+  inputType="text"
+  placeholder="Add placeholder"
+  InputId=""
+></rds-input>
+```
+</div>
+</div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- input with Position -->
+<section class="py-4">
+    <h6>With Position</h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#Previewtooltip" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#Angulartooltip" type="button" role="tab" aria-controls="AngularBasic" aria-selec0ted="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="Previewtooltip" role="tabpanel" aria-labelledby="PreviewBasic-tab">
+         <div class="contents bg-light p-5">
+              <div class="row">
+               <img src="/images/input-with-position.png" class="img-thumbnail w-100">
+              </div>
+                       
+  </div>
+        </div>
+        <div class="tab-pane fade show" id="Angulartooltip" role="tabpanel" aria-labelledby="AngularBasic-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<rds-input
+  size="small"
+  label="Label"
+  labelPosition="top"
+  inputType="number"
+  placeholder="Add placeholder"
+  InputId=""
+></rds-input>
+```
+</div>
+</div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+
+
+
+ 
+<section class="py-4">
+                        <h6>
+                           Skeleton / Specifications
+                        </h6>
+                        <div class="py-3">
+                              <!-- Tab panes -->
+                              <div class="card border p-5">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <img src="/images/input-skeleton.png" class="img-fluid">
+                                    </div>
+                                 </div>
+                              </div>
+                        </div>
+                     </section>
+                     
 
 
 

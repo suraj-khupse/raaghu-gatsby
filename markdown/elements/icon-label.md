@@ -1,5 +1,5 @@
 ---
-slug: "/icon-Label"
+slug: "/icon-label"
 date: "2019-05-04"
 title: "Elements > Icon-Label"
 ---
@@ -31,7 +31,7 @@ title: "Elements > Icon-Label"
          <div class="contents p-5">
               <div class="row">
                  <div class="col-md-12">
-                    <img src="/images/icon-label.png" class="img-fluid w-25">
+                    <img src="/images/icon-label.png" class="img-fluid w-100">
                  </div>              
            </div>
                        
@@ -43,12 +43,11 @@ title: "Elements > Icon-Label"
 
 ```html
 <rds-icon-label
-[iconposition]="iconposition"
-[icon]="icon"
-[label]="label"
-[size]="size"
-[iconSize]="iconSize">
-</rds-icon-label>
+  [icon]="icon"
+  [colorVariant]="colorVariant"
+  [label]="label"
+  [size]="size"
+></rds-icon-label>
 ```
 </div>
 </div>
@@ -78,7 +77,7 @@ title: "Elements > Icon-Label"
          <div class="contents p-5">
               <div class="row">
                  <div class="col-md-12">
-                    <img src="/images/icon-label-position.png" class="img-fluid w-100">
+                    <img src="/images/icon-with-position.png" class="img-fluid w-100">
                  </div>              
            </div>
                        
@@ -95,9 +94,7 @@ title: "Elements > Icon-Label"
   [colorVariant]="colorVariant"
   [label]="label"
   [size]="size"
-  [height]="height"
   [iconposition]="iconposition"
-  [width]="width"
 ></rds-icon-label>
 ```
 </div>

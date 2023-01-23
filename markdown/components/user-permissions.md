@@ -38,13 +38,13 @@ title: "Components > User-permission"
 
 ```html
 <rds-comp-user-permissions
-[FilterPermissionList]="FilterPermissionList"
-[userList]="userList"
-[roles]="roles"
-[permissionsList]="permissionsList"
-[userHeaders]="userHeaders"
-[orgTreeData]="orgTreeData">
-</rds-comp-user-permissions>
+  [FilterPermissionList]="FilterPermissionList"
+  [userList]="userList"
+  [roles]="roles"
+  [permissionsList]="permissionsList"
+  [userHeaders]="userHeaders"
+  [orgTreeData]="orgTreeData"
+></rds-comp-user-permissions>
 ```
 </div>
 </div>

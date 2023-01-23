@@ -39,10 +39,7 @@ title: "Components > Invoice"
 <div class="row m-0">
 
 ```html
-<rds-comp-invoice>
-[editShimmer]="",
-[InvoiceDataForm]=""
-</rds-comp-invoice>
+<rds-comp-invoice></rds-comp-invoice>
 
 ```
 </div>

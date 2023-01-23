@@ -38,8 +38,8 @@ title: "Components > User-management"
 
 ```html
 <rds-comp-user-management
-[Usermanagementsettings]="Usermanagementsettings">
-</rds-comp-user-management>
+  [Usermanagementsettings]="Usermanagementsettings"
+></rds-comp-user-management>
 ```
 </div>
 </div>

@@ -40,7 +40,7 @@ title: "Components > Notification"
 <div class="row m-0">
 
 ```html
- <rds-notification
+<rds-notification
   unreadCount="12"
   [notifications]="notifications"
   backgroundColor=""

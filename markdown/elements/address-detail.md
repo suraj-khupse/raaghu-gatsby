@@ -45,10 +45,12 @@ title: "Elements > Address-Detail"
 
 ```html
 <rds-address-detail
-  header="Address Header"
-  addressLine1="Address Line 1"
-  addressLine2="Address Line 2"
-  addressLine3="Address Line 3"
+  header="Billing Address"
+  addressLine1="Brookland House"
+  addressLine2="5439,Rose Mills Road"
+  addressLine3="Santa Clara,CA 95054"
+  [withIcon]="true"
+  [Cardborder]="true"
 ></rds-address-detail>
 ```
 </div>

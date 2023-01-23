@@ -42,10 +42,11 @@ title: "Elements > Feature-List"
 
 ```html
 <rds-feature-list
-header="Features"
-[listItems]="listItems"
-[columns]="1">
-</rds-feature-list>
+  header="Features"
+  [listItems]="listItems"
+  [columns]="1"
+  display_type="basic"
+></rds-feature-list>
 ```
 </div>
 </div>

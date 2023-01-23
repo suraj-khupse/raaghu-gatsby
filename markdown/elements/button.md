@@ -46,8 +46,8 @@ title: "Elements > Button"
 ```html
 <rds-button
   colorVariant="primary"
-  [block]="false"
   size="medium"
+  buttonId=""
   label="button"
 ></rds-button>
 ```
@@ -93,6 +93,7 @@ title: "Elements > Button"
   colorVariant="primary"
   [block]="true"
   size="medium"
+  buttonId=""
   label="Block"
 ></rds-button>
 ```
@@ -144,6 +145,7 @@ title: "Elements > Button"
   [iconFill]="false"
   icon="plus"
 ></rds-button>
+
 ```
 
 </div>
@@ -187,10 +189,10 @@ title: "Elements > Button"
 <rds-button
   colorVariant="primary"
   size="medium"
-  iconHeight="18px"
-  iconWidth="18px"
-  [iconStroke]="true"
-  [iconFill]="false"
+  buttonId=""
+  iconHeight="15px"
+  iconWidth="15px"
+  [isIconFill]="false"
   icon="plus"
   label="button"
 ></rds-button>
@@ -235,9 +237,9 @@ title: "Elements > Button"
 ```html
 <rds-button
   colorVariant="primary"
-  [block]="false"
   size="medium"
-  [outlineButton]="true"
+  [isOutline]="true"
+  buttonId=""
   label="outline"
 ></rds-button>
 ```
@@ -282,9 +284,9 @@ title: "Elements > Button"
 ```html
 <rds-button
   colorVariant="primary"
-  [block]="false"
   size="medium"
-  [disabled]="true"
+  [isDisabled]="true"
+  buttonId=""
   label="Disable"
 ></rds-button>
 ```
@@ -329,7 +331,8 @@ title: "Elements > Button"
 <rds-button
   colorVariant="primary"
   size="medium"
-  [roundedCorner]="true"
+  [isRounded]="true"
+  buttonId=""
   label="Rounded Corner"
 ></rds-button>
 ```
@@ -371,13 +374,13 @@ title: "Elements > Button"
 <div class="row">
 
 ```html
-<rds-button
+ <rds-button
       [label]="label"
       [colorVariant]="colorVariant"
       [size]="size"
       [tooltipTitle]="tooltipTitle"
       [tooltipPlacement]="tooltipPlacement"
-></rds-button>
+    ></rds-button>
 ```
 
 </div>

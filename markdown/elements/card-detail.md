@@ -44,7 +44,12 @@ title: "Elements > Card-detail"
 <div class="row m-0">
 
 ```html
-  <rds-card-detail [cardData]="cardData"></rds-card-detail>
+<rds-card-detail
+  [cardData]="cardData"
+  [IsEditAndDefaultFunctionalityRequired]="IsEditAndDefaultFunctionalityRequired"
+  [IsSelectionRequired]="IsSelectionRequired"
+  [label]="label"
+></rds-card-detail>
 ```
 </div>
 </div>

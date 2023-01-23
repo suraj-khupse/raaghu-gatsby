@@ -44,12 +44,16 @@ title: "Elements > Banner"
 
 ```html
 <rds-banner
-  align ="start"
+  textAlign="start"
   bannerText="Big news! We are excited to announce a brand new product."
   [sticky]="false"
-  position="top"
   colorVariant="info"
   icon="information"
+  iconHeight="20px"
+  iconWidth="20px"
+  iconSize=""
+  [iconStroke]="true"
+  [iconFill]="false"
 ></rds-banner>
 ```
 

@@ -44,13 +44,10 @@ title: "Elements > Textarea"
 
 ```html
 <rds-textarea
-  [tooltipPlacement]="tooltipPlacement"
-  [placeholderText]="placeholderText"
-  [label]="label"
-  [value]="value"
-  [isFloatingInputLabel]="isFloatingInputLabel"
-  [floatinglabel]="floatinglabel"
-  [rows]="rows"
+  [isRequired]="false"
+  label="Text area"
+  placeholderText="Add Placeholder"
+  labelPosition="top"
 ></rds-textarea>
 ```
 
@@ -89,16 +86,14 @@ title: "Elements > Textarea"
 <div class="row m-0">
 
 ```html
-<div class="row m-5">
-  <div class="col-md-12 p-5">
     <rds-textarea
       [label]="label"
       [tooltipTitle]="tooltipTitle"
       [placeholderText]="placeholderText"
       [tooltipPlacement]="tooltipPlacement"
     ></rds-textarea>
-  </div>
-</div>
+  
+
 ```
 
 </div>

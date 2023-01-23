@@ -42,16 +42,15 @@ title: "Elements > Collapse"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-collapse
-  [colorVariant]="colorVariant"
-  [buttonLabelOne]="buttonLabelOne"
-  [collapseIdOne]="collapseIdOne"
-  [contentSectionOne]="contentSectionOne"
-  [borderCard]="borderCard"
-  (toggle)="toggle($event)"
-  (onClose)="onClose($event)"
-  (onShow)="onShow($event)"
-></rds-collapse>
+<rds-collapse [buttonList]="buttonList">
+  <div class="collapse mt-1" id="collapseExample">
+    <div class="card card-body">
+      Some placeholder content for the first collapse component of this
+      multi-collapse example. This panel is hidden by default but revealed when
+      the user activates the relevant trigger.
+    </div>
+  </div>
+</rds-collapse>
 ```
 
 </div>
@@ -63,7 +62,7 @@ title: "Elements > Collapse"
 
 
   <section class="py-4">
-    <h6>Collapse with Multiple Target</h6>
+    <h6>Multi Toggle</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -91,21 +90,24 @@ title: "Elements > Collapse"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-collapse
-  [colorVariant]="colorVariant"
-  [buttonLabelOne]="buttonLabelOne"
-  [buttonLabelTwo]="buttonLabelTwo"
-  [collapseIdOne]="collapseIdOne"
-  [collapseIdTwo]="collapseIdTwo"
-  [multipleButtonLabel]="multipleButtonLabel"
-  [contentSectionOne]="contentSectionOne"
-  [contentSectionTwo]="contentSectionTwo"
-  [borderCard]="borderCard"
-  [multipleButton]="multipleButton"
-  (toggle)="toggle($event)"
-  (onClose)="onClose($event)"
-  (onShow)="onShow($event)"
-></rds-collapse>
+<rds-collapse [buttonList]="buttonList">
+  <div class="d-flex">
+    <div class="collapse mt-1 me-2" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the first collapse component of this
+        multi-collapse example. This panel is hidden by default but revealed
+        when the user activates the relevant trigger.
+      </div>
+    </div>
+    <div class="collapse mt-1 multi-collapse" id="collapseExample1">
+      <div class="card card-body">
+        Some placeholder content for the second collapse component of this
+        multi-collapse example. This panel is hidden by default but revealed
+        when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+</rds-collapse>
 ```
 
 </div>

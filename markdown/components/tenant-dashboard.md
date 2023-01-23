@@ -38,33 +38,7 @@ title: "Components > tenant-dashboard"
 <div class="row m-0">
 
 ```html
-<rds-comp-tenant-dashboard
-  [ConnectedCallsData]="ConnectedCallsData"
-  [ClientCallsData]="ClientCallsData"
-  [ProfitShareData]="ProfitShareData"
-  userName="Keanu Foster"
-  [memberActivityTableData]="memberActivityTableData"
-  [monthlySummaryDataSets]="monthlySummaryDataSets"
-  [monthlySummaryLabels]="monthlySummaryLabels"
-  [monthlySummarychartWidth]="1000"
-  [monthlySummarychartOptions]="monthlySummarychartOptions"
-  [pschartDatasets]="pschartDatasets"
-  [pschartLabels]="pschartLabels"
-  [pschartWidth]="200"
-  [pschartOptions]="pschartOptions"
-  [barHrChartDatasets]="barHrChartDatasets"
-  [barHrChartLabels]="barHrChartLabels"
-  [barHrChartWidth]="255"
-  [barHrChartOptions]="barHrChartOptions"
-  [ClientCallschartDatasets]="ClientCallschartDatasets"
-  [ClientCallschartLabels]="ClientCallschartLabels"
-  [ClientCallschartWidth]="200"
-  [ClientCallschartOptions]="ClientCallschartOptions"
-  [ConnectedCallschartDatasets]="ConnectedCallschartDatasets"
-  [ConnectedCallschartLabels]="ConnectedCallschartLabels"
-  [ConnectedCallschartWidth]="200"
-  [ConnectedCallschartOptions]="ConnectedCallschartOptions"
-></rds-comp-tenant-dashboard>
+<rds-tenant-dashboard></rds-tenant-dashboard>
 ```
 </div>
 </div>

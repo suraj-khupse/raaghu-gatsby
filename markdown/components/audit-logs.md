@@ -42,6 +42,7 @@ title: "Components > Audit-Logs"
 ```html
 <rds-comp-audit-logs
   [operationLogsHeaders]="operationLogsHeaders"
+  [changeLogsHeaders]="changeLogsHeaders"
   [operationLogs]="operationLogs"
 ></rds-comp-audit-logs>
 ```

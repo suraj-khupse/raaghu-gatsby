@@ -44,6 +44,7 @@ title: "Components > Notification Settings"
 <rds-comp-notification-settings
   [notificationTypes]="notificationTypes"
   [show]="true"
+  [backdrop]="false"
 ></rds-comp-notification-settings>
 ```
 </div>

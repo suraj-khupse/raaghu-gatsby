@@ -40,7 +40,6 @@ title: "Components > Visual-Settings"
 
 ```html
 <rds-comp-visual-settings
-  [navtabItems]="navtabItems"
   [listskin]="listskin"
   [listSubmenu]="listSubmenu"
   [visualsettingsItem]="visualsettingsItem"

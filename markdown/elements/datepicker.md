@@ -41,7 +41,18 @@ title: "Elements > Datepicker"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-datepicker [datePickerType]="datePickerType"></rds-datepicker>
+  <rds-datepicker
+      [datePickerType]="datePickerType"
+      [datePickerConfig]="datePickerConfig"
+      [placeholder]="placeholder"
+      [datesDisabled]="datesDisabled"
+      [dateTooltipTexts]="dateTooltipTexts"
+      [maxDate]="maxDate"
+      [placement]="placement"
+      [label]="label"
+      [daysDisabled]="daysDisabled"
+      [TitleType]="TitleType"
+    ></rds-datepicker>
 ```
 
 </div>
@@ -81,7 +92,11 @@ title: "Elements > Datepicker"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-datepicker datePickerType="advanced" Label="Date Range"></rds-datepicker>
+<rds-datepicker
+  datePickerType="advanced"
+  placeholder="Selected Date"
+  label="Date Range"
+></rds-datepicker>
 ```
 
 </div>

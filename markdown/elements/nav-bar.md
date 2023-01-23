@@ -41,7 +41,7 @@ title: "Elements > Nav-bar"
 <div class="row m-0">
 
 ```html
-<rds-nav-bar [navbarItems]="navbarItems" size="medium"></rds-nav-bar>
+<rds-nav-bar title="Navbar" [navbarItems]="navbarItems"></rds-nav-bar>
 ```
 </div>
 </div>

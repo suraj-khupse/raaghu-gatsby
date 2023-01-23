@@ -42,6 +42,7 @@ title: "Elements > Benefit"
 
 ```html
 <rds-benefit [item]="item" display_type="Default"></rds-benefit>
+
 ```
 </div>
 </div>
@@ -52,7 +53,7 @@ title: "Elements > Benefit"
   </section>
    
    <section class="py-4">
-    <h6>Centre Aligned</h6>
+    <h6>With Illustrations Centre Aligned</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -81,6 +82,7 @@ title: "Elements > Benefit"
 
 ```html
 <rds-benefit [item]="item" display_type="Centre Aligned"></rds-benefit>
+
 ```
 </div>
 </div>
@@ -91,10 +93,10 @@ title: "Elements > Benefit"
   </section>
 
 
-<!-- Heading With Icon -->
+<!-- With Heading and Label centre align -->
 
   <section class="py-4">
-    <h6>Heading With Icon</h6>
+    <h6>With Heading and Label Centre align</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -124,6 +126,7 @@ title: "Elements > Benefit"
 ```html
 
 <rds-benefit [item]="item" display_type="Heading With Icon"></rds-benefit>
+
 ```
 </div>
 </div>
@@ -134,7 +137,7 @@ title: "Elements > Benefit"
   </section>
 
   <section class="py-4">
-    <h6>Left Aligned</h6>
+    <h6>With Illustrations Left Aligned</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -151,7 +154,7 @@ title: "Elements > Benefit"
          <div class="contents  p-5">
               <div class="row">
                  <div class="col-md-12">
-                    <img src="/images/benefit-type-3.png" class="img-fuild w-100">
+                    <img src="/images/benefit-left-align.png" class="img-fuild w-100">
                  </div>              
            </div>
                        
@@ -189,7 +192,7 @@ title: "Elements > Benefit"
          <div class="contents  p-5">
               <div class="row">
                <div class="col-md-12">
-                   <img src="/images/benefit-type-4.png" class="img-fuild w-50">
+                   <img src="/images/benefit-with-label.png" class="img-fuild w-50">
                </div>              
            </div>
                        
@@ -213,7 +216,7 @@ title: "Elements > Benefit"
 <!-- Benefit without Label -->
 
   <section class="py-4">
-    <h6>Benefit without Label</h6>
+    <h6>With Heading and Label Centre Align</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -241,7 +244,7 @@ title: "Elements > Benefit"
 <div class="row m-0">
 
 ```html
-  <rds-benefit [item]="item" display_type="Without Label"></rds-benefit>
+  <rds-benefit [item]="item" display_type="Label Centred Align"></rds-benefit>
 ```
 </div>
 </div>

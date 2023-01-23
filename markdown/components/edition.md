@@ -41,7 +41,7 @@ title: "Components > Edition"
 <div class="row m-0">
 
 ```html
-  <rds-card-detail [cardData]="cardData"></rds-card-detail>
+  <rds-comp-edition></rds-comp-edition>
 ```
 </div>
 </div>

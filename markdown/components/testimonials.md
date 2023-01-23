@@ -39,9 +39,9 @@ title: "Components > Testimonials"
 <div class="row m-0">
 
 ```html
- <rds-comp-testimonials
+<rds-comp-testimonials
+  [carousalItem]="carousalItem"
   displayType="basic"
-  [testimonialItems]="testimonialItems"
 ></rds-comp-testimonials>
 ```
 </div>

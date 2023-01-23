@@ -41,7 +41,7 @@ title: "Components > Order-Summary"
 <div class="row m-0">
 
 ```html
-  <rds-comp-order-summary></rds-comp-order-summary>
+ <rds-comp-order-summary></rds-comp-order-summary>
 ```
 </div>
 </div>

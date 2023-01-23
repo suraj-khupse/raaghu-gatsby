@@ -42,11 +42,14 @@ title: "Elements > Fab-Menu"
 
 ```html
 <rds-fab-menu
-colorVariant="btn-secondary"
-size="default"
-[listItems]="listItems"
-(onSelect)="onSelect($event)">
-</rds-fab-menu>
+  colorVariant="primary"
+  size="default"
+  menuicon="plus"
+  menuiconWidth="12px"
+  menuiconHeight="12px"
+  [listItems]="listItems"
+  [withColorVariant]="true"
+></rds-fab-menu>
 ```
 </div>
 </div>

@@ -41,12 +41,7 @@ title: "Elements > Like-Dislike"
 <div class="row m-0">
 
 ```html
-   <rds-like-dislike
-  [likeCount]="0"
-  [dislikeCount]="0"
-  [min]="0"
-  (onClick)="onClick($event)"
-></rds-like-dislike>
+<rds-like-dislike [likeCount]="0" [dislikeCount]="0"></rds-like-dislike>
 ```
 </div>
 </div>

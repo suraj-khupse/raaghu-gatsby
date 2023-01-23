@@ -40,10 +40,10 @@ title: "Components > Email-Settings"
 <div class="row m-0">
 
 ```html
-  <rds-comp-email-settings
-   [emailSettings]="emailSettings"
-   [buttonSpinner]="false">
-   </rds-comp-email-settings>
+<rds-comp-email-settings
+  [buttonSpinner]="false"
+  [emailSettings]="emailSettings"
+></rds-comp-email-settings>
 ```
 </div>
 </div>

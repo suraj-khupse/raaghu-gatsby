@@ -41,7 +41,7 @@ title: "Elements > Feed"
 <div class="row m-0">
 
 ```html
-<rds-feed [itemList]="itemList" (onSelect)="onSelect($event)"></rds-feed>
+<rds-feed [itemList]="itemList"></rds-feed>
 ```
 </div>
 </div>

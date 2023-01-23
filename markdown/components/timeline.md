@@ -84,10 +84,10 @@ title: "Components > Timeline"
 <div class="row m-0">
 
 ```html
- <app-rds-comp-timeline
+ <rds-comp-timeline
   displayType="Advance"
   [recentData]="recentData"
-></app-rds-comp-timeline>
+></rds-comp-timeline>
 ```
 </div>
 </div>
@@ -125,10 +125,10 @@ title: "Components > Timeline"
 <div class="row m-0">
 
 ```html
- <app-rds-comp-timeline
+<rds-comp-timeline
   displayType="Timeline"
   [timeLine]="timeLine"
-></app-rds-comp-timeline>
+></rds-comp-timeline>
 ```
 </div>
 </div>

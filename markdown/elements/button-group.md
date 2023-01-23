@@ -16,7 +16,7 @@ title: "Elements > Button-group"
 <!-- Default -->
 
 <section class="py-4">
-    <h6>Default Filled</h6>
+    <h6>Default</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -44,9 +44,6 @@ title: "Elements > Button-group"
 
 ```html
 <rds-button-group
-  [vertical]="false"
-  colorVariant="primary"
-  role="button"
   size="medium"
   [buttonGroupItem]="buttonGroupItem"
 ></rds-button-group>
@@ -64,7 +61,7 @@ title: "Elements > Button-group"
 <!-- Outline Button Group-->
 
 <section class="py-4" style="margin-bottom: 40px">
-    <h6>Outline Button Group</h6>
+    <h6>With Checkbox</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -93,7 +90,6 @@ title: "Elements > Button-group"
 ```html
 <rds-button-group
   [vertical]="false"
-  colorVariant="primary"
   [outline]="true"
   role="checkbox"
   size="medium"
@@ -111,7 +107,7 @@ title: "Elements > Button-group"
 <!-- Icon Group Filled -->
 
 <section class="py-4" style="margin-bottom: 40px">
-    <h6>Icon Group Filled</h6>
+    <h6>With Icon</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -140,7 +136,6 @@ title: "Elements > Button-group"
 ```html
 <rds-button-group
   [vertical]="false"
-  colorVariant="primary"
   size="medium"
   [buttonGroupItem]="buttonGroupItem"
 ></rds-button-group>
@@ -156,7 +151,7 @@ title: "Elements > Button-group"
 <!-- Radio Button Group -->
 
 <section class="py-4" style="margin-bottom: 40px">
-    <h6>Radio Button Group</h6>
+    <h6>With Radio</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -185,7 +180,6 @@ title: "Elements > Button-group"
 ```html
 <rds-button-group
   [vertical]="false"
-  colorVariant="primary"
   [outline]="true"
   role="radio"
   size="medium"
@@ -202,7 +196,7 @@ title: "Elements > Button-group"
 <!-- Vertical Group Filled -->
 
 <section class="py-4" style="margin-bottom: 40px">
-    <h6>Vertical Group Filled</h6>
+    <h6>Vertical</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -231,7 +225,6 @@ title: "Elements > Button-group"
 ```html
 <rds-button-group
   [vertical]="true"
-  colorVariant="primary"
   size="medium"
   [buttonGroupItem]="buttonGroupItem"
 ></rds-button-group>

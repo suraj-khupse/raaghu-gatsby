@@ -44,11 +44,14 @@ title: "Elements > Counter"
 
 ```html
 
-  <rds-counter
+ <rds-counter
   [counterValue]="0"
   label=""
-  [width]="124"
+  [min]="0"
+  [max]="10"
+  [width]="110"
   colorVariant="primary"
+  position="start"
 ></rds-counter>
 ```
 </div>

@@ -42,15 +42,13 @@ title: "Elements > Dropdown"
 
 ```html
 <rds-dropdown
-[listItems]="listItems"
-[label]="label"
-[direction]="direction"
-[size]="size"
-[role]="role"
-role="dropdown-button"
-[colorVariant]="colorVariant"
-(click)="onclick($event,item)">
-</rds-dropdown>
+  [listItems]="listItems"
+  [label]="label"
+  [direction]="direction"
+  [size]="size"
+  [role]="role"
+  role="dropdown-button"
+></rds-dropdown>
 ```
 </div>
 </div>
@@ -89,15 +87,13 @@ role="dropdown-button"
 
 ```html
 <rds-dropdown
-[listItems]="listItems"
-[label]="label"
-[direction]="direction"
-[size]="size"
-[role]="role"
-role="dropdown-button"
-[colorVariant]="colorVariant"
-(click)="onclick($event,item)">
-</rds-dropdown>
+  [listItems]="listItems"
+  [label]="label"
+  [direction]="direction"
+  [size]="size"
+  [role]="role"
+  role="dropdown-button"
+></rds-dropdown>
 ```
 </div>
 </div>

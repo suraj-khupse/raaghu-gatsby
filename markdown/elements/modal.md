@@ -45,47 +45,41 @@ title: "Elements > Modal"
 <div class="row m-0">
 
 ```html
-  <button
+<button
   type="button"
-  (click)="onClick($event)"
   class="btn btn-primary"
   data-bs-toggle="modal"
-  data-bs-target="#storybookModal"
+  data-bs-target="#modalId"
 >
-  {{label}}
+  show Modal
 </button>
 <rds-modal
-  modalId="storybookModal"
-  (onShow)="onShow($event)"
-  [modalClasses]="modalClasses"
-  [modalAnimation]="modalAnimation"
+  [preventEscapeKey]="preventEscapeKey"
+  [showModalHeader]="showModalHeader"
+  [showModalFooter]="showModalFooter"
+  [modalBackdrop]="true"
 >
-  <div modalheader class="col-md-12" *ngIf="isModalHeader">
+  <div
+    modalheader
+    class="d-flex align-items-center w-100 justify-content-between"
+  >
+    <h5 class="modal-title" id="storybookModal">Title</h5>
     <button
       style="float:right"
       type="button"
       class="btn-close"
       data-bs-dismiss="modal"
       aria-label="Close"
-      (click)="onClose($event)"
     ></button>
-    <h5 class="modal-title" id="storybookModal">{{modalData.modalHeader}}</h5>
   </div>
-  <div Modalbody>
-    <p>{{modalData.modalContent}}</p>
+  <div modalbody>
+    <p>Modal Body</p>
   </div>
-  <div Modalfooter *ngIf="isModalFooter">
-    <button
-      type="button"
-      (click)="onClose($event)"
-      class="btn btn-secondary m-1"
-      data-bs-dismiss="modal"
-    >
+  <div modalfooter>
+    <button type="button" class="btn btn-secondary m-1" data-bs-dismiss="modal">
       Close
     </button>
-    <button type="button" (click)="showAlert()" class="btn btn-primary">
-      Save changes
-    </button>
+    <button type="button" class="btn btn-primary">Save changes</button>
   </div>
 </rds-modal>
 ```
@@ -96,6 +90,78 @@ title: "Elements > Modal"
       </div>
     </div>
   </section>
+
+<!-- Verticall centred -->
+
+  <section class="py-4">
+    <h6>Vertically Centred</h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selec0ted="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="PreviewBasic" role="tabpanel" aria-labelledby="PreviewBasic-tab">
+         <div class="contents  p-5">
+              <div class="row">
+               <div class="col-md-12">
+                  <img src="/images/modal-vertically-centred.png" class="img-fluid w-100">
+               </div>               
+              </div>
+                       
+  </div>
+        </div>
+        <div class="tab-pane fade show" id="AngularBasic" role="tabpanel" aria-labelledby="AngularBasic-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<button
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#modalId"
+>
+  Show Centered Modal
+</button>
+<rds-modal
+  [preventEscapeKey]="preventEscapeKey"
+  [showModalHeader]="showModalHeader"
+  [verticallyCenterd]="verticallyCenterd"
+  [modalBackdrop]="true"
+  [showModalFooter]="showModalFooter"
+>
+  <div
+    modalheader
+    class="d-flex align-items-center w-100 justify-content-between"
+  >
+    <h5 class="modal-title" id="storybookModal">Title</h5>
+    <button
+      style="float:right"
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div modalbody>
+    <p>Modal Content</p>
+  </div>
+  <div modalfooter>
+    <button type="button" class="btn btn-secondary m-1" data-bs-dismiss="modal">
+      Close
+    </button>
+    <button type="button" (click)="showAlert()" class="btn btn-primary">
+      Save changes
+    </button>
+  </div>
+</rds-modal>
    
 <!-- Long Content Modal -->
 

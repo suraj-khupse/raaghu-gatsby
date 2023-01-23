@@ -34,7 +34,7 @@ title: "Elements > Offcanvas"
          <div class="contents p-5">
               <div class="row">
                  <div class="col-md-12">
-                    <img src="/images/offcanvas-basic.png" class="img-fluid w-50">
+                    <img src="/images/offcanvas-basic.png" class="img-fluid w-100">
                  </div>               
               </div>
                        
@@ -45,20 +45,26 @@ title: "Elements > Offcanvas"
 <div class="row m-0">
 
 ```html
- <button
+<button
   class="btn btn-primary"
   type="button"
   data-bs-toggle="offcanvas"
   data-bs-target="#canvasExample"
   aria-controls="canvasExample"
-  (click)="onShow.emit($event)"
 >
   Button
 </button>
 <rds-offcanvas
-  [colorVariant]="[colorVariant]"
   [placement]="[placement]"
-></rds-offcanvas>
+  [canvasTitle]="canvasTitle"
+  [backDrop]="backDrop"
+  [offId]="offId"
+  [offcanvaswidth]="offcanvaswidth"
+  [bodySpacing]="bodySpacing"
+  [preventEscapeKey]="preventEscapeKey"
+>
+  Try scrolling the rest of the page to see this option in action.
+</rds-offcanvas>
 ```
 </div>
 </div>

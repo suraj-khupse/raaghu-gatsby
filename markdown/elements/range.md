@@ -42,7 +42,7 @@ title: "Elements > Range"
 <div class="row m-0">
 
 ```html
- <rds-range [min]="500" [max]="1000"></rds-range>
+ <rds-range [value]="0" [min]="0" role="Default" [max]="100"></rds-range>
 ```
 </div>
 </div>
@@ -53,7 +53,7 @@ title: "Elements > Range"
   </section>
 
 <section class="py-4">
-    <h6>Range Type 1</h6>
+    <h6>Range On Scale</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -70,7 +70,7 @@ title: "Elements > Range"
          <div class="contents  p-5">
               <div class="row">
                  <div class="col-md-12">
-                    <img src="\images\range-1.png" class="img-fluid w-100">
+                    <img src="\images\range-on-scale.png" class="img-fluid w-100">
                  </div>              
            </div>
                        
@@ -81,7 +81,7 @@ title: "Elements > Range"
 <div class="row m-0">
 
 ```html
-<rds-range [min]="0" role="Range Type 1" [max]="100"></rds-range>
+<rds-range [value]="0" [min]="0" role="Range On Scale" [max]="100"></rds-range>
 ```
 </div>
 </div>
@@ -92,7 +92,7 @@ title: "Elements > Range"
   </section>
    
 <section class="py-4">
-    <h6>Range Type 2</h6>
+    <h6>Range Below Scale</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -109,7 +109,7 @@ title: "Elements > Range"
          <div class="contents  p-5">
               <div class="row">
                  <div class="col-md-12">
-                    <img src="\images\range-2.png" class="img-fluid w-100">
+                    <img src="\images\range-below-scale.png" class="img-fluid w-100">
                  </div>              
            </div>
                        
@@ -120,7 +120,12 @@ title: "Elements > Range"
 <div class="row m-0">
 
 ```html
-<rds-range [min]="0" role="Range Type 2" [max]="100"></rds-range>
+<rds-range
+  [value]="0"
+  [min]="0"
+  role="Range Below Scale"
+  [max]="100"
+></rds-range>
 ```
 </div>
 </div>

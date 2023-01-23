@@ -42,28 +42,27 @@ title: "Elements > Card"
 <div class="row m-0">
 
 ```html
- <rds-card
-  [header]="header"
-  [body]="body"
-  [backgroundColor]="backgroundColor"
-  [bodybackGroundColor]="'#DFE5F6'"
-  [footer]="footer"
-  [Paddig]="10"
-  [Data]="Data"
-  [width]="width"
-  class="rounded-avatar-basic"
+<rds-card
+  [topBottomPadding]="topBottomPadding"
+  [sidePadding]="sidePadding"
+  [showHeader]="showHeader"
+  [showBody]="showBody"
+  [showFooter]="showFooter"
+  [borderColor]="borderColor"
 >
-  <ng-template #header>
-    <div class="text-center">
-      <img
-        src="https://picsum.photos/seed/picsum/1200/600"
-        class="card-img-top"
-        alt=""
-      />
-    </div>
-  </ng-template>
-  <ng-template #body>
-    <h5 class="custom-title">{{Data.headerTitle}}</h5>
+  <div header class="card-header pt-3 px-3">
+    <h5>Header Title</h5>
+  </div>
+  <div body>
+    <p>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content
+    </p>
+  </div>
+  <div footer>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</rds-card>
 ```
 </div>
 </div>
@@ -104,29 +103,44 @@ title: "Elements > Card"
 
 ```html
  <rds-card
-  [header]="header"
-  [body]="body"
-  [Data]="Data"
-  [footer]="footer"
-  width="30%"
-  class="rounded-avatar-left"
+  [topBottomPadding]="topBottomPadding"
+  [sidePadding]="sidePadding"
+  [showHeader]="showHeader"
+  [showBody]="showBody"
+  [showFooter]="showFooter"
+  [colorVariant]="colorVariant"
+  [borderColor]="borderColor"
 >
-  <ng-template #header>
-    <div class="banner-image1">
-      <img
-        class="img-responsive"
-        src="https://picsum.photos/seed/picsum/1200/600"
-      />
+  <div header>
+    <div class="banner-image1 position-relative">
+      <div>
+        <img
+          src="https://picsum.photos/seed/picsum/1200/600"
+          class="card-img-top"
+          alt=""
+        />
+      </div>
+      <div class="position-absolute avatar-pic">
+        <rds-avatar
+          [withProfilePic]="true"
+          size="large"
+          [roundedPills]="false"
+          [profilePic]="'https://placekitten.com/300/300'"
+          [roundedAvatar]="true"
+        ></rds-avatar>
+      </div>
     </div>
-    <img src="https://placekitten.com/300/300" alt="" class="img-avatar-left" />
-  </ng-template>
-  <ng-template #body>
-    <h5 class="custom-title">{{Data.headerTitle}}</h5>
-    <p class="custom-desc">{{Data.cardDescription}}</p>
-  </ng-template>
-  <ng-template #footer>
-    <a href="#" class="btn btn-primary  mt-3">Go somewhere</a>
-  </ng-template>
+  </div>
+  <div body class="pt-3">
+    <h5>Header Title</h5>
+    <p>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content
+    </p>
+  </div>
+  <div footer>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </rds-card>
 ```
 </div>
@@ -165,11 +179,13 @@ title: "Elements > Card"
 
 ```html
 <rds-card
+  [topBottomPadding]="topBottomPadding"
+  [sidePadding]="sidePadding"
   [showHeader]="showHeader"
   [showBody]="showBody"
   [showFooter]="showFooter"
-  [colorVariant]="colorVariant"
   [borderColor]="borderColor"
+  [colorVariant]="colorVariant"
 >
   <div header>
     <img
@@ -184,9 +200,9 @@ title: "Elements > Card"
       Some quick example text to build on the card title and make up the bulk of
       the card's content
     </p>
-    <div footer>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+  </div>
+  <div footer>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </rds-card>
 ```
@@ -233,29 +249,44 @@ title: "Elements > Card"
 
 ```html
   <rds-card
-  [header]="header"
-  [body]="body"
-  [Data]="Data"
-  [footer]="footer"
-  width="28%"
-  class="rounded-avatar-center"
+  [topBottomPadding]="topBottomPadding"
+  [sidePadding]="sidePadding"
+  [showHeader]="showHeader"
+  [showBody]="showBody"
+  [showFooter]="showFooter"
+  [colorVariant]="colorVariant"
+  [borderColor]="borderColor"
 >
-  <ng-template #header>
-    <div class="banner-image1">
-      <img
-        class="img-responsive"
-        src="https://picsum.photos/seed/picsum/1200/600"
-      />
+  <div header class="">
+    <div class="banner-image1 position-relative">
+      <div>
+        <img
+          src="https://picsum.photos/seed/picsum/1200/600"
+          class="card-img-top"
+          alt=""
+        />
+      </div>
+      <div class="position-relative avatar-pic2 d-flex justify-content-center">
+        <rds-avatar
+          [withProfilePic]="true"
+          size="large"
+          [roundedPills]="false"
+          [profilePic]="'https://placekitten.com/300/300'"
+          [roundedAvatar]="true"
+        ></rds-avatar>
+      </div>
     </div>
-    <img src="https://placekitten.com/300/300" alt="" class="img-avatar" />
-  </ng-template>
-  <ng-template #body>
-    <h5 class="custom-title">{{Data.headerTitle}}</h5>
-    <p class="custom-desc">{{Data.cardDescription}}</p>
-  </ng-template>
-  <ng-template #footer>
-    <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
-  </ng-template>
+  </div>
+  <div body>
+    <h5>Header Title</h5>
+    <p>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content
+    </p>
+  </div>
+  <div footer>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </rds-card>
 ```
 </div>

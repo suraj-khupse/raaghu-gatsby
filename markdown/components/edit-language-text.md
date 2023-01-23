@@ -40,7 +40,7 @@ title: "Components > edit-language-text"
 ```html
 <rds-comp-edit-language-text
   [Languagetext]="Languagetext"
-></rds-comp-edit-language-text>  
+></rds-comp-edit-language-text>
 ```
 </div>
 </div>

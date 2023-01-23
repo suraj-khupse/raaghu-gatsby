@@ -42,16 +42,16 @@ title: "Components > Shipping-Address"
 ```html
 <rds-comp-shipping-address
   EmailID=""
-  [Contact]=""
+  Contact=""
   firstName=""
   lastName=""
   company=""
-  [phone]=""
+  phone=""
   address=""
   state=""
   country=""
   [countryList]="countryList"
-  [postalCode]=""
+  postalCode=""
 ></rds-comp-shipping-address>
 ```
 </div>

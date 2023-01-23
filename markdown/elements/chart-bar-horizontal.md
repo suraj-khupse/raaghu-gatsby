@@ -1,5 +1,5 @@
 ---
-slug: "/chart-bar-horizontal"
+slug: "/Chart-Bar-Horizontal"
 date: "2019-05-04"
 title: "Charts > Chart-Bar-Horizontal"
 ---

@@ -41,13 +41,9 @@ title: "Elements > Checkbox-parent-child"
 
 ```html
    <rds-checkbox-parent-child
-  [checked]="false"
-  [disabled]="false"
-  id="checkboxid"
-  label="default checkbox"
+  [itemList]="itemList"
   [switch]="false"
   [inline]="false"
-  [withLabel]="true"
   [isInputGroup]="false"
   state="checkbox"
 ></rds-checkbox-parent-child>

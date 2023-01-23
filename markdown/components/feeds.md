@@ -41,7 +41,7 @@ title: "Components > Feeds"
 <div class="row m-0">
 
 ```html
- <rds-comp-feeds displaytype="Basic"></rds-comp-feeds>
+<rds-comp-feeds displaytype="Basic"></rds-comp-feeds>
 ```
 </div>
 </div>
@@ -78,7 +78,7 @@ title: "Components > Feeds"
 <div class="row m-0">
 
 ```html
- <app-rds-comp-feeds displaytype="Advanced"></app-rds-comp-feeds>
+<rds-comp-feeds displaytype="Advanced"></rds-comp-feeds>
 ```
 </div>
 </div>
@@ -116,7 +116,7 @@ title: "Components > Feeds"
 <div class="row m-0">
 
 ```html
-<app-rds-comp-feeds displaytype="With_Multiple_Items"></app-rds-comp-feeds>
+<rds-comp-feeds displaytype="With_Multiple_Items"></rds-comp-feeds>
 ```
 </div>
 </div>

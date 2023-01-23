@@ -1,7 +1,7 @@
 ---
 slug: "/accordion"
 date: "2019-05-04"
-title: "Elements > Accordion"
+title: "Elements > accordion"
 ---
 
 <!-- CSS only -->
@@ -93,15 +93,12 @@ title: "Elements > Accordion"
     <div class="row m-0">
 
 ```html
-<rds-accordian [flush]="flush">
-  <accordion-item title="Section 1 title">
-    this is content updated
+<rds-accordian [id]="id">
+  <accordion-item [parentId]="id" title="Section 1 title" [expanded]="false">
+    <h3 accordianBody>Custom</h3>
   </accordion-item>
-</rds-accordian>
-
-<rds-accordian>
-  <accordion-item title="Section 2 title">
-    <h3>Custom</h3>
+  <accordion-item title="Section 2 title" [parentId]="id">
+    <h3 accordianBody>Custom</h3>
   </accordion-item>
 </rds-accordian>
 ```

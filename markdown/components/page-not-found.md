@@ -41,7 +41,7 @@ title: "Components > Page Not Found"
 <div class="row m-0">
 
 ```html
- <rds-comp-page-not-found></rds-comp-page-not-found>
+<rds-comp-page-not-found></rds-comp-page-not-found>
 ```
 </div>
 </div>

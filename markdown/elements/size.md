@@ -81,9 +81,7 @@ title: "Elements > Size"
 <div class="row m-0">
 
 ```html
-<div class="col-md-12">
   <rds-size [sizeType]="sizeType"></rds-size>
-</div>
 ```
 </div>
 </div>

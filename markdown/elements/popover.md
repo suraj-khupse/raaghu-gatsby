@@ -14,6 +14,7 @@ title: "Elements > Popover"
 <p class="">Popovers are used to provide supplemental, useful, unique information about an element, including one or multiple actionable elements.</p>
 
 <section class="py-4">
+<h6>Popover with Button</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -30,7 +31,7 @@ title: "Elements > Popover"
          <div class="contents  p-5">
               <div class="row">
                  <div class="col-md-12">
-                     <img src="\images\popover-with-button.png" class="img-fluid w-25">
+                     <img src="\images\popover-with-button.png" class="img-fluid w-100">
                  </div>              
               </div>
                        
@@ -41,15 +42,17 @@ title: "Elements > Popover"
 <div class="row m-0">
 
 ```html
- <rds-popover
+<rds-popover
   [popoverTitle]="popoverTitle"
   [popoverContent]="popoverContent"
   [popoverPosition]="popoverPosition"
-  (click)="onClick($event)"
->
-  <button class="btn btn-primary" [popoverPosition]="popoverPosition">
-    popover button
-  </button>
+  (onClick)="onClick($event)"
+> <rds-button
+    [buttonType]="'labelOnly'"
+    [label]="'popover button'"
+    [colorVariant]="'primary'"
+    [size]="'md'"
+  ></rds-button>
 </rds-popover>
 ```
 </div>
