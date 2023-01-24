@@ -18,9 +18,9 @@ title: "Pages > Security Log"
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="PreviewBasic-tab1" data-bs-toggle="tab" data-bs-target="#PreviewBasic1" type="button" role="tab" aria-controls="PreviewBasic1" aria-selected="true">Preview </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <!-- <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab1" data-bs-toggle="tab" data-bs-target="#AngularBasic1" type="button" role="tab" aria-controls="AngularBasic1" aria-selec0ted="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">

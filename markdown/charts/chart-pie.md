@@ -43,8 +43,9 @@ title: "Charts > Chart-pie"
 ```html
 <rds-chart-pie
   [chartWidth]="300"
+  [chartHeight]="500"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-pie>
 ```
@@ -86,8 +87,9 @@ title: "Charts > Chart-pie"
 ```html
 <rds-chart-pie
   [chartWidth]="300"
+  [chartHeight]="400"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-pie>
 ```

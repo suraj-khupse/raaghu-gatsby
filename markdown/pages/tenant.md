@@ -1,7 +1,7 @@
 ---
-slug: "/chart-stacked"
+slug: "/page-tenant"
 date: "2019-05-04"
-title: "Charts > Chart-stacked"
+title: "Pages > Tenant"
 ---
 
 <!-- CSS only -->
@@ -9,44 +9,46 @@ title: "Charts > Chart-stacked"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-#### Stacked Chart
 
-<p class="">A stacked chart represents the changes and trends over the period of time.</p>
+#### Tenant
 
+<p>A page having multiple dropdown options and necessary action required for tenant </p>
+
+<!-- Basic -->
 <section class="py-4">
-<h6>Default</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <!-- <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
         <div class="tab-pane fade show active" id="PreviewBasic" role="tabpanel" aria-labelledby="PreviewBasic-tab">
-          <div class="contents p-5">                                            
-            <div class="row">
-              <div class="col-md-6 col-12">
-                <img src="/images/stacked-chart.png" class="img-fluid">
-              </div> 
-            </div>
-          </div>
+         <div class="contents  p-5">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                            <img src="/images/tenant-page.png" class="w-100">
+                                            </div>
+                                          </div>
+                                    </div>
         </div>
         <div class="tab-pane fade show" id="AngularBasic" role="tabpanel" aria-labelledby="AngularBasic-tab">
           <div class="contents bg-code">
-<div class="row  m-0 p-4">
+<div class="row m-0">
 
 ```html
-<rds-chart-stacked
-  [chartWidth]="1000"
-  [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
-  [chartOptions]="chartOptions"
-></rds-chart-stacked>
+<rds-comp-tenant-list
+  [tenantSettingsInfo]="tenantSettingsInfo"
+  [tenantData]="tenantData"
+  [tenantList]="tenantList"
+  [editionList]="editionList"
+  [tenantHeaders]="tenantHeaders"
+></rds-comp-tenant-list>
 ```
 
 </div>
@@ -56,5 +58,4 @@ title: "Charts > Chart-stacked"
     </div>
   </section>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
