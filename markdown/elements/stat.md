@@ -43,7 +43,7 @@ title: "Elements > Stat"
 <div class="row m-0">
 
 ```html
-<rds-stat [statItems]="statItems" display_type="Basic"></rds-stat>
+<rds-stat [statItems]="statItems" display_type="basic"></rds-stat>
 ```
 
 </div>
@@ -81,7 +81,7 @@ title: "Elements > Stat"
 <div class="row m-0 py-3">
 
 ```html
-<rds-stat [statItems]="statItems" display_type="Advanced"></rds-stat>
+<rds-stat [statItems]="statItems" display_type="advanced"></rds-stat>
 ```
 
 </div>

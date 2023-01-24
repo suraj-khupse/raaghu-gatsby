@@ -43,7 +43,7 @@ title: "Components > data-table"
   [tableHeaders]="tableHeaders"
   [pagination]="true"
   [actions]="actions"
-></rds-comp-data-table>   
+></rds-comp-data-table>
 ```
 </div>
 </div>

@@ -40,10 +40,11 @@ title: "Components > Pricing-table"
 
 ```html
 <rds-comp-pricing-table
-[itemList]="itemList"
-selectedPlan="Monthly Plan"
-[planList]="planList">
-</rds-comp-pricing-table>
+  [pricingTableHeaderItems]="pricingTableHeaderItems"
+  [pricingTableBodyItems]="pricingTableBodyItems"
+  selectedPlan="Monthly Plan"
+  [planList]="planList"
+></rds-comp-pricing-table>
 ```
 </div>
 </div>

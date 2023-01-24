@@ -40,7 +40,11 @@ title: "Elements > Search-input"
 <div class="row  m-0 p-4">
   
 ```html
-<rds-search-input placeholder="Search" size="small"></rds-search-input>
+<rds-search-input
+  placeholder="Search"
+  size="medium"
+  label="Search Here"
+></rds-search-input>
 ```
 
  </div>

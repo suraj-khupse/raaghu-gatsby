@@ -39,7 +39,7 @@ title: "Components > Contact-Information"
 <div class="row m-0">
 
 ```html
-  <app-rds-comp-contact-information></app-rds-comp-contact-information>    
+<rds-comp-contact-information></rds-comp-contact-information>
 ```
 </div>
 </div>

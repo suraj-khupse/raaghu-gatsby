@@ -44,11 +44,13 @@ title: "Elements > Rating"
 
 ```html
 <rds-rating
-  [WithNoOfReviews]="true"
+  [itemList]="itemList"
+  [withNoOfReviews]="true"
+  ratingPosition="left"
   [rating]="2"
   colorVariant="review"
   [noOfReview]="123"
-  Size="medium"
+  size="medium"
 ></rds-rating>
 ```
 </div>

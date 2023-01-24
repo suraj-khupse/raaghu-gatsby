@@ -42,9 +42,11 @@ title: "Elements > Illustration"
 
 ```html
 <rds-illustration
-label="Currently you do not have Webhook Subscriptions"
-subLabel="Click on the button above to add">
-</rds-illustration>
+  label="Currently you do not have Webhook Subscriptions"
+  subLabel="Click on the button above to add"
+  iconHeight="168px"
+  iconWidth="168px"
+></rds-illustration>
 ```
 </div>
 </div>

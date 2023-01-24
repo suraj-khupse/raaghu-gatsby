@@ -48,13 +48,10 @@ title: "Elements > Checkbox"
   [checked]="false"
   [disabled]="false"
   [switch]="false"
-  [inline]="false"
   id="checkboxid"
   [withLabel]="true"
-  [isInputGroup]="true"
+  [isInputGroup]="false"
   state="checkbox"
-  (onChange)="onChange($event)"
-  (onClick)="onClick($event)"
 ></rds-checkbox>
 ```
 

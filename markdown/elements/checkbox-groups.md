@@ -42,9 +42,13 @@ title: "Elements > Checkbox-groups"
 <div class="row m-0">
 
 ```html
-   <rds-checkbox-groups
+ <rds-checkbox-groups
+  [switch]="false"
+  [inline]="false"
   [withLabel]="true"
+  [isInputGroup]="false"
   [itemList]="itemList"
+  state="checkbox"
   (onCheck)="onCheck($event)"
   (onUncheck)="onUncheck($event)"
 ></rds-checkbox-groups>

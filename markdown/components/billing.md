@@ -28,7 +28,7 @@ title: "Components > Billing"
          <div class="contents p-5">
               <div class="row">
                <div class="col-md-12">
-                  <img src="/images/billing.png" class="img-fluid">
+                  <img src="/images/billing.png" class="img-fluid w-100">
                </div>                            
            </div>
                        
@@ -39,7 +39,7 @@ title: "Components > Billing"
 <div class="row m-0">
 
 ```html
-  <rds-comp-billing
+<rds-comp-billing
   emailId="admin@aspnetzero.com"
   alternativeEmail=""
   [cardList]="cardList"
@@ -49,7 +49,7 @@ title: "Components > Billing"
   [actions]="actions"
   [radioItem]="radioItem"
   [radioItem1]="radioItem1"
-></rds-comp-billing>    
+></rds-comp-billing>  
 ```
 </div>
 </div>

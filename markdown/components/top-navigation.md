@@ -44,9 +44,10 @@ title: "Components > Top Navigation"
 <div class="row m-0">
 
 ```html
- <rds-top-navigation
+<rds-top-navigation
   selectedMenu="Dashboard"
   backgroundColor="rgb(245, 245, 250)"
+  [languageItems]="languageItems"
   UserName="Wai Technologies"
 ></rds-top-navigation>
 ```

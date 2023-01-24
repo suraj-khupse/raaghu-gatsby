@@ -44,8 +44,11 @@ title: "Elements > Team-member"
 <div class="row m-0">
 
 ```html
-<rds-team-member displayType="basic" [teamItem]="teamItem"></rds-team-member>
-```
+<rds-team-member displayType="basic" [teamItem]="teamItem"></rds-team-member><rds-team-member
+  displayType="Basic"
+  [teamItem]="teamItem"
+  colorVariant="primary"
+></rds-team-member>```
 </div>
 </div>
   </div>
@@ -83,7 +86,11 @@ title: "Elements > Team-member"
 <div class="row m-0">
 
 ```html
-   <rds-team-member displayType="Advance" [teamItem]="teamItem"></rds-team-member>
+  <rds-team-member
+  displayType="Advanced"
+  [teamItem]="teamItem"
+  colorVariant="primary"
+></rds-team-member>
 ```
 </div>
 </div>

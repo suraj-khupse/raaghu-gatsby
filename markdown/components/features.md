@@ -43,7 +43,7 @@ title: "Components > Features"
 <div class="row m-0">
 
 ```html
-  <rds-comp-features
+<rds-comp-features
   [EditionsTableHeader]="EditionsTableHeader"
   [EditionsTableData]="EditionsTableData"
   [recordsPerpage]="10"
@@ -52,6 +52,7 @@ title: "Components > Features"
   [TrailPeriod]="10"
   [ExpiryInterval]="10"
   freeEditon="Edition"
+  [editShimmer]="false"
   [featureList]="featureList"
 ></rds-comp-features>
 ```

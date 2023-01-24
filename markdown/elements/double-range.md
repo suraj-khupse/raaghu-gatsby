@@ -40,13 +40,7 @@ title: "Elements > Double-range"
 <div class="row m-0">
 
 ```html
-<rds-double-range
-  role="Default"
-  [val1]="0"
-  [val2]="100"
-  [min]="0"
-  [max]="100"
-></rds-double-range>
+<rds-double-range role="Default" [val1]="0" [val2]="100"></rds-double-range>
 ```
 </div>
 </div>
@@ -57,7 +51,7 @@ title: "Elements > Double-range"
   </section>
 
   <section class="py-4">
-    <h6>Double Range Type 1</h6>
+    <h6>Double Range On Scale</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -74,7 +68,7 @@ title: "Elements > Double-range"
          <div class="contents p-5">
               <div class="row">
                <div class="col-md-12">
-                   <img src="/images/double-range-type1.png" class="img-fluid">
+                   <img src="/images/double-range-on-scale.png" class="img-fluid">
                </div>                           
            </div>
                        
@@ -86,11 +80,9 @@ title: "Elements > Double-range"
 
 ```html
 <rds-double-range
-  role="Double Range Type 1"
+  role="Double Range On Scale"
   [val1]="0"
   [val2]="100"
-  [min]="0"
-  [max]="100"
 ></rds-double-range>
 ```
 </div>
@@ -103,7 +95,7 @@ title: "Elements > Double-range"
 
 
 <section class="py-4">
-    <h6>Double Range Type 2</h6>
+    <h6>Double Range Below Scale</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -120,7 +112,7 @@ title: "Elements > Double-range"
          <div class="contents p-5">
               <div class="row">
                <div class="col-md-12">
-                   <img src="/images/double-range-type2.png" class="img-fluid">
+                   <img src="/images/double-range-below-scale.png" class="img-fluid">
                </div>                           
            </div>
                        
@@ -131,12 +123,10 @@ title: "Elements > Double-range"
 <div class="row m-0">
 
 ```html
- <rds-double-range
-  role="Double Range Type 2"
+<rds-double-range
+  role="Double Range Below Scale"
   [val1]="0"
   [val2]="100"
-  [min]="0"
-  [max]="100"
 ></rds-double-range>
 ```
 </div>

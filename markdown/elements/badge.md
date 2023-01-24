@@ -16,7 +16,7 @@ title: "Elements > Badge"
 
 <!-- Basic Example -->
 <section class="py-4">
-    <h6>Default</h6>
+    <h6>Text Badge</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -58,7 +58,7 @@ title: "Elements > Badge"
     </div>
   </section>
 <section class="py-4">
-    <h6>Badge Button</h6>
+    <h6>Button</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -85,19 +85,15 @@ title: "Elements > Badge"
 <div class="row m-0">
 
 ```html
-<button type="button" class="btn btn-primary">
-  <span right>
-    Notification
-    <rds-badge
-      size="smallest"
-      Types="light"
-      label="9"
-      [pillBadges]="false"
-      BackgroundColor="#C5F8CF"
-      color="#16BE36"
-    ></rds-badge>
-  </span>
-</button>
+<rds-button [label]="'Button'" [colorVariant]="'primary'" size="medium">
+  <rds-badge
+    class="ms-2"
+    [size]="size"
+    [label]="label"
+    [colorVariant]="colorVariant"
+    [badgeType]="badgeType"
+  ></rds-badge>
+</rds-button>
 ```
 
 </div>
@@ -108,7 +104,7 @@ title: "Elements > Badge"
   </section>
 
 <section class="py-4">
-    <h6>Badge Icon</h6>
+    <h6>Icon with overlay</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -125,7 +121,7 @@ title: "Elements > Badge"
           <div class="contents p-5">
             <div class="row">
               <div class="col-12">
-                      <img src="/images/badge-with-icon.png" class="img-fluid">                          
+                      <img src="/images/badge-with-icon-overlay.png" class="img-fluid">                          
                 </div>
             </div>
           </div>
@@ -135,31 +131,27 @@ title: "Elements > Badge"
 <div class="row  text-white m-0 p-4">
 
 ```html
-<button class="position-relative btn btn-ligh">
-  <svg
-    right
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    fill="currentColor"
-    class="bi bi-chat-left-dots"
-    viewBox="0 0 16 16"
-  ><path
-      d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
-    /><path
-      d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
-    /></svg>
+<rds-button
+  class="position-relative"
+  [size]="'small'"
+  [id]="'notification'"
+  [roundedButton]="true"
+  [colorVariant]="'default'"
+>
+  <rds-icon
+    name="notification"
+    colorVariant="primary"
+    width="20px"
+    height="20px"
+  ></rds-icon>
   <rds-badge
-    right
-    size="smallest"
-    BackgroundColor="#C5F8CF"
-    label="9"
-    [pillBadges]="false"
-    color="#ffffff"
-    [positioned]="true"
-    [iconBadge]="true"
+    [size]="size"
+    [label]="label"
+    [colorVariant]="colorVariant"
+    [badgeType]="badgeType"
+    [positioned]="positioned"
   ></rds-badge>
-</button>
+</rds-button>
 ```
 
 </div>
@@ -170,7 +162,7 @@ title: "Elements > Badge"
   </section>
 
 <section class="py-4">
-    <h6>Badge Positioned</h6>
+    <h6>Label with Overlay</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -197,19 +189,20 @@ title: "Elements > Badge"
 <div class="row  text-white m-0 p-4">
 
 ```html
-<button type="button" class="btn btn-light position-relative">
-  new
-  <span right>
-    <rds-badge
-      size="smallest"
-      BackgroundColor="#C5F8CF"
-      label="99+"
-      [pillBadges]="true"
-      color="#ffffff"
-      [positioned]="true"
-    ></rds-badge>
-  </span>
-</button>
+<rds-button
+  [colorVariant]="'primary'"
+  size="medium"
+  class="position-relative"
+  [label]="'button'"
+>
+  <rds-badge
+    [size]="size"
+    [label]="label"
+    [colorVariant]="colorVariant"
+    [badgeType]="badgeType"
+    [positioned]="positioned"
+  ></rds-badge>
+</rds-button>
 ```
 
 </div>

@@ -1,5 +1,5 @@
 ---
-slug: "/Table"
+slug: "/table"
 date: "2019-05-04"
 title: "Elements > Table"
 ---
@@ -42,11 +42,9 @@ title: "Elements > Table"
 
 ```html
 <rds-table
-  [tableBorder]="false"
-  [tableHeader]="true"
-  [tableHeaderItems]="tableHeaderItems"
-  [tableBodyItems]="tableBodyItems"
-  colorVariant="light"
+  [tableHeaders]="tableHeaders"
+  [tableData]="tableData"
+  colorVariant="primary"
 ></rds-table>
 ```
 </div>
@@ -88,7 +86,7 @@ title: "Elements > Table"
   [showTableBorder]="false"
   [tableHeaders]="tableHeaders"
   [tableData]="tableData"
-  colorVariant="light"
+  colorVariant="primary"
 ></rds-table>
 ```
 </div>
@@ -130,7 +128,7 @@ title: "Elements > Table"
   [showTableHeader]="false"
   [tableHeaders]="tableHeaders"
   [tableData]="tableData"
-  colorVariant="light"
+  colorVariant="primary"
 ></rds-table>
 ```
 

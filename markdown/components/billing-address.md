@@ -41,18 +41,8 @@ title: "Components > Billing-address"
 ```html
 <rds-comp-billing-address
   [countryList]="countryList"
-  EmailID="admin@aspnetzero.com"
-  Contact="" 
-  firstName="Admin"
-  lastName="Admin";
-  company="Company";
-  phone=123;
-  address="Admin Address";
-  state="Admin state"
-  country="Country";
-  postalCode=123;
-  buttonSpinner= true;
-></rds-comp-billing-address>   
+  [stateList]="stateList"
+></rds-comp-billing-address>  
 ```
 </div>
 </div>

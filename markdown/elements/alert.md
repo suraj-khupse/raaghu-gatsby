@@ -43,16 +43,15 @@ title: "Elements > Alert"
 
 ```html
 <rds-alert
-  [visibility]="false"
-  [alertOpen]="true"
-  [dismisable]="true"
-  icon="bi bi-info-circle"
-  label="A simple primary alert—check it out!"
-  heading=""
-  type="primary"
-  position="bottom"
-  (onDismiss)="onDismiss($event)"
-  (onShow)="onShow($event)"
+  [dismissible]="true"
+  icon="information"
+  iconHeight="25px"
+  iconWidth="25px"
+  [iconStroke]="true"
+  [iconFill]="false"
+  colorVariant="danger"
+  [delay]="0"
+  [sticky]="false"
 ></rds-alert>
 ```
 

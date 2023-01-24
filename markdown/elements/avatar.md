@@ -15,7 +15,7 @@ title: "Elements > Avatar"
 
 <!-- Default -->
 <section class="py-4">
-    <h6>Default</h6>
+    <h6>Basic With Initials</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -43,11 +43,10 @@ title: "Elements > Avatar"
 
 ```html
 <rds-avatar
-  [WithProfilePic]="false"
-  profilePic=""
-  FirstName=""
-  LastName=""
-  Size="Medium"
+  colorVariant="warning"
+  firstName="Allen"
+  lastName="Russel"
+  size="medium"
 ></rds-avatar>
 ```
 
@@ -60,7 +59,7 @@ title: "Elements > Avatar"
 
   <!-- with-horizontally-alligned-info -->
 <section class="py-4">
-    <h6>With Horizontally Alligned Info</h6>
+    <h6>Initials With Heading</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -90,9 +89,11 @@ title: "Elements > Avatar"
 <rds-avatar
   [firstName]="firstName"
   [lastName]="lastName"
+  [size]="size"
   [colorVariant]="colorVariant"
   [verticallyAlligned]="verticallyAlligned"
 >
+  {{firstName}} {{lastName}}
 </rds-avatar>
 ```
 
@@ -105,7 +106,7 @@ title: "Elements > Avatar"
 
 
   <!-- with-vertically-alligned-info -->
-<section class="py-4">
+<!-- <section class="py-4">
     <h6>With Vertically Alligned Info</h6>
     <div class="py-3">
       <div class="cust-tabs">
@@ -147,11 +148,11 @@ title: "Elements > Avatar"
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- with-profile -->
 <section class="py-4">
-    <h6>Profile</h6>
+    <h6>With Profile Pic</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -180,8 +181,13 @@ title: "Elements > Avatar"
 ```html
 <rds-avatar
   [withProfilePic]="true"
-  profilePic="/image/avatar-profile.png"
-  size="medium"
+  profilePic="https://t4.ftcdn.net/jpg/04/10/43/77/240_F_410437733_hdq4Q3QOH9uwh0mcqAhRFzOKfrCR24Ta.jpg"
+  firstName="Allen"
+  lastName="Russel"
+  [verticallyAlligned]="false"
+  height="35"
+  subTitle="host"
+  [profileContentAlign]="true"
 ></rds-avatar>
 ```
 

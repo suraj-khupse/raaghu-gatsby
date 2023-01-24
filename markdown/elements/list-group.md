@@ -42,12 +42,10 @@ title: "Elements > List-group"
 
 ```html
 <rds-list-group
-labelPosition="Top"
-label=""
-[listItem]="listItem"
-[multiSelect]="false"
-(onClick)="onClick($event)">
-</rds-list-group>
+  labelPosition="top"
+  label="List Group"
+  [listItem]="listItem"
+></rds-list-group>
 ```
 
 </div>
@@ -87,12 +85,11 @@ label=""
 
 ```html
 <rds-list-group
-labelPosition="Top"
-label=""
-[listItem]="listItem"
-[multiSelect]="false"
-(onClick)="onClick($event)">
-</rds-list-group>
+  labelPosition="top"
+  label="List Group"
+  [listItem]="listItem"
+  [multiSelect]="true"
+></rds-list-group>
 ```
 </div>
 </div>

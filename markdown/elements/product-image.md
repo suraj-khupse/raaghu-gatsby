@@ -42,9 +42,11 @@ title: "Elements > Product-image"
 <div class="row m-0">
 
 ```html
-  <rds-product-image
+ <rds-product-image
   display_type="Basic"
-  [itemList]="itemList"></rds-product-image>
+  [images]="images"
+  [itemList]="itemList"
+></rds-product-image>
 ```
 </div>
 </div>
@@ -55,7 +57,7 @@ title: "Elements > Product-image"
   </section>
 
   <section class="py-4">
-    <h6>Product Overview 1</h6>
+    <h6>Column layout</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -83,7 +85,7 @@ title: "Elements > Product-image"
 <div class="row m-0">
 
 ```html
- <rds-product-image
+<rds-product-image
   display_type="Product_overview1"
   [itemList]="itemList"
 ></rds-product-image>
@@ -99,7 +101,7 @@ title: "Elements > Product-image"
 
   
   <section class="py-4">
-    <h6>Product Overview 2</h6>
+    <h6>Enlarge View</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -141,7 +143,7 @@ title: "Elements > Product-image"
   </section>
    
    <section class="py-4">
-    <h6>Product Overview 3</h6>
+    <h6>Image gallery</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">

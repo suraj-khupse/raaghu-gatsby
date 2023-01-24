@@ -41,10 +41,7 @@ title: "Components > Email"
 <div class="row m-0">
 
 ```html
-  <rds-comp-email
-  [editShimmer]="false"
-  [EmailData]="EmailData"
-></rds-comp-email>
+<rds-comp-email [editShimmer]="false" [EmailData]="EmailData"></rds-comp-email>
 ```
 </div>
 </div>

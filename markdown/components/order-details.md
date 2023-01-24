@@ -40,10 +40,10 @@ title: "Components > Order Details"
 <div class="row m-0">
 
 ```html
-  <app-rds-comp-order-details
+<rds-comp-order-details
   displaytype="with-progress-bars"
   [itemList]="itemList"
-></app-rds-comp-order-details>
+></rds-comp-order-details>
 ```
 </div>
 </div>
@@ -83,10 +83,10 @@ title: "Components > Order Details"
 <div class="row m-0">
 
 ```html
-  <app-rds-comp-order-details
+<rds-comp-order-details
   displaytype="With large images and progress bars"
   [itemList]="itemList"
-></app-rds-comp-order-details>
+></rds-comp-order-details>
 ```
 </div>
 </div>
@@ -125,10 +125,10 @@ title: "Components > Order Details"
 <div class="row m-0">
 
 ```html
-  <app-rds-comp-order-details
-  displaytype="With large images and progress bars-1"
+<rds-comp-order-details
+  displaytype="With large images and progress bars - 1"
   [itemList]="itemList"
-></app-rds-comp-order-details>
+></rds-comp-order-details>
 ```
 </div>
 </div>

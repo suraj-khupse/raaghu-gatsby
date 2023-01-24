@@ -40,13 +40,13 @@ title: "Components > Hierarchy"
 
 ```html
 <rds-comp-hierarchy
-[treeData]="treeData"
-[mutable]="true"
-ButtonLabel="New Node"
-[TreeNodeLabeles]="TreeNodeLabeles"
-[TreeType]="TreeType"
-[nodeColors]="nodeColors">
-</rds-comp-hierarchy>
+  [treeData]="treeData"
+  [mutable]="true"
+  ButtonLabel="New Node"
+  [TreeNodeLabeles]="TreeNodeLabeles"
+  [TreeType]="TreeType"
+  [nodeColors]="nodeColors"
+></rds-comp-hierarchy>
 ```
 </div>
 </div>

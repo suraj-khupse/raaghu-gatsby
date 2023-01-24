@@ -30,7 +30,7 @@ title: "Elements > Breadcrumb"
          <div class="contents p-5">
               <div class="row">
                  <div class="col-md-12">
-                     <img src="/images/breadcrumb-default.png" class="img-fluid">
+                     <img src="/images/breadcrumb-divider.png" class="img-fluid">
                  </div>            
            </div>
                        
@@ -41,10 +41,9 @@ title: "Elements > Breadcrumb"
 <div class="row m-0">
 
 ```html
-   <rds-breadcrumb
-  [customBreadcrumbsItems]="customBreadcrumbsItems"
+<rds-breadcrumb
+  [breadcrumbsItems]="breadcrumbsItems"
   role="basic"
-  [iconShow]="false"
 ></rds-breadcrumb>
 ```
 </div>
@@ -99,7 +98,7 @@ title: "Elements > Breadcrumb"
     </div>
   </section> -->
 
-   <section class="py-4">
+   <!-- <section class="py-4">
     <h6>With Divider</h6>
     <div class="py-3">
       <div class="cust-tabs">
@@ -140,7 +139,7 @@ title: "Elements > Breadcrumb"
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 ###### Skeleton / Specifications 
 

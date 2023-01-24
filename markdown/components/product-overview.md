@@ -11,7 +11,7 @@ title: "Components > Product-overview"
 
 <p>Gives the details on the product selected along with the user requirement on size</p>
 <section class="py-4">
-    <h6>Default</h6>
+    <h6>Sizes with CTA </h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -40,8 +40,10 @@ title: "Components > Product-overview"
 
 ```html
 <rds-comp-product-overview
-productType="producroverview1">
-</rds-comp-product-overview>
+  productType="producroverview1"
+  [sizeData]="sizeData"
+  [itemList]="itemList"
+></rds-comp-product-overview>
 ```
 </div>
 </div>
@@ -53,7 +55,7 @@ productType="producroverview1">
 
 <!-- product One -->
 <section class="py-4">
-    <h6>Product Overview Two</h6>
+    <h6>With Description And Badge</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -70,7 +72,7 @@ productType="producroverview1">
          <div class="contents p-5">
               <div class="row">    
                  <div class="col-md-12">
-                      <img src="/images/product-overview-two.png" class="img-fluid w-100">
+                      <img src="/images/product-overview-with-description-and-badge.png" class="img-fluid w-100">
                  </div>                      
            </div>
                        
@@ -82,9 +84,12 @@ productType="producroverview1">
 
 ```html
 <rds-comp-product-overview
-productType="producroverview2"
-[itemListbenefit]="itemListbenefit">
-</rds-comp-product-overview>
+  productType="producroverview2"
+  [sizeData]="sizeData"
+  [itemListbenefit]="itemListbenefit"
+  [listItems]="listItems"
+  [itemList]="itemList"
+></rds-comp-product-overview>
 ```
 </div>
 </div>
@@ -94,129 +99,5 @@ productType="producroverview2"
     </div>
   </section>
 
-<!-- Two -->
-<section class="py-4">
-    <h6>Product Overview Three</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#PreviewTwo" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularTwo" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewTwo" role="tabpanel" aria-labelledby="PreviewBasic-tab">
-         <div class="contents p-5">
-              <div class="row">    
-                 <div class="col-md-12">
-                     <img src="/images/product-overview-three.png" class="img-fluid w-100">
-                 </div>                     
-           </div>
-                       
-  </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularTwo" role="tabpanel" aria-labelledby="AngularBasic-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
 
-```html
-<rds-comp-product-overview
-productType="producroverview3">
-</rds-comp-product-overview>
-```
-</div>
-</div>
-  </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Three -->
-<section class="py-4">
-    <h6>Product Overview Four</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#PreviewThree" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularThree" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewThree" role="tabpanel" aria-labelledby="PreviewBasic-tab">
-         <div class="contents p-5">
-              <div class="row">         
-                 <div class="col-md-12">
-                     <img src="/images/product-overview-four.png" class="img-fluid w-100">
-                 </div>                 
-           </div>
-                       
-  </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularThree" role="tabpanel" aria-labelledby="AngularBasic-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
-
-```html
-<rds-comp-product-overview
-productType="producroverview4">
-</rds-comp-product-overview>
-```
-</div>
-</div>
-  </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Description -->
-<section class="py-4">
-    <h6>Product Overview Description</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#PreviewDescription" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularDescription" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewDescription" role="tabpanel" aria-labelledby="PreviewBasic-tab">
-         <div class="contents p-5">
-              <div class="row">            
-                 <div class="col-md-12">
-                    <img src="/images/product-overview-description.png" class="img-fluid w-100">
-                 </div>              
-           </div>
-                       
-  </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularDescription" role="tabpanel" aria-labelledby="AngularBasic-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
-
-```html
-<rds-comp-product-overview
-productType="producroverviewdescription">
-</rds-comp-product-overview>
-```
-</div>
-</div>
-  </div>
-        </div>
-      </div>
-    </div>
-  </section>
    

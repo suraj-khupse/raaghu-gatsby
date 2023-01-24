@@ -11,6 +11,51 @@ title: "Components > Product-list"
 
 <p>Provides different features on selecting a product along with different buttons </p>
 
+<!-- Simple -->
+<section class="py-4">
+    <h6>Simple</h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewSimple-tab" data-bs-toggle="tab" data-bs-target="#PreviewSimple" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularSimple-tab" data-bs-toggle="tab" data-bs-target="#AngularSimple" type="button" role="tab" aria-controls="AngularSimple" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="PreviewSimple" role="tabpanel" aria-labelledby="PreviewSimple-tab">
+         <div class="contents  p-5">
+              <div class="row">
+                 <div class="col-md-12">
+                     <img src="/images/product-image-list-simple.png" class="img-fluid w-100">
+                 </div>             
+           </div>
+                       
+  </div>
+        </div>
+        <div class="tab-pane fade show" id="AngularSimple" role="tabpanel" aria-labelledby="AngularSimple-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<rds-comp-product-list
+  role="simple"
+  [productListItems]="productListItems"
+  [itemListRating]="itemListRating"
+></rds-comp-product-list>
+```
+</div>
+</div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 <section class="py-4">
     <h6>Infinite Product List</h6>
     <div class="py-3">
@@ -184,50 +229,6 @@ title: "Components > Product-list"
     </div>
   </section>
 
-<!-- Simple -->
-<section class="py-4">
-    <h6>Simple</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewSimple-tab" data-bs-toggle="tab" data-bs-target="#PreviewSimple" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularSimple-tab" data-bs-toggle="tab" data-bs-target="#AngularSimple" type="button" role="tab" aria-controls="AngularSimple" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewSimple" role="tabpanel" aria-labelledby="PreviewSimple-tab">
-         <div class="contents  p-5">
-              <div class="row">
-                 <div class="col-md-12">
-                     <img src="/images/product-image-list-simple.png" class="img-fluid w-100">
-                 </div>             
-           </div>
-                       
-  </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularSimple" role="tabpanel" aria-labelledby="AngularSimple-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
-
-```html
-<rds-comp-product-list
-  role="simple"
-  [productListItems]="productListItems"
-  [itemListRating]="itemListRating"
-></rds-comp-product-list>
-```
-</div>
-</div>
-  </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
 <!-- With Border Grid -->
 <section class="py-4">
@@ -260,7 +261,7 @@ title: "Components > Product-list"
 
 ```html
 <rds-comp-product-list
-  role="simple"
+  role="withBorderGrid"
   [productListItems]="productListItems"
   [itemListRating]="itemListRating"
 ></rds-comp-product-list>
@@ -293,7 +294,7 @@ title: "Components > Product-list"
          <div class="contents p-5">
               <div class="row">               
                  <div class="col-md-12">
-                     <img src="/images/product-image-tall-CTA-link.png" class="img-fluid w-100">
+                     <img src="/images/product-image-CTA-link.png" class="img-fluid w-100">
                  </div>             
            </div>
                        
@@ -305,8 +306,10 @@ title: "Components > Product-list"
 
 ```html
 <rds-comp-product-list
-  role="withCTALink"
+  role="withColorSwatchesAndHorizontalScrolling"
   [productListItems]="productListItems"
+  [itemListColor]="itemListColor"
+  [itemListRating]="itemListRating"
 ></rds-comp-product-list>
 ```
 </div>
@@ -425,7 +428,7 @@ title: "Components > Product-list"
          <div class="contents p-5">
               <div class="row">           
                  <div class="col-md-12">
-                     <img src="/images/product-image-with-inline-price.png" class="img-fluid w-100">
+                     <img src="/images/product-image-inline-price.png" class="img-fluid w-100">
                  </div>              
            </div>
                        

@@ -41,8 +41,9 @@ title: "Components > Information"
 
 ```html
 <rds-comp-information
-[dynamicPropertiesData]="dynamicPropertiesData">
-</rds-comp-information>
+  [dynamicPropertiesData]="dynamicPropertiesData"
+  [inputTypeList]="inputTypeList"
+></rds-comp-information>
 ```
 </div>
 </div>

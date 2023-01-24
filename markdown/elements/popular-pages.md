@@ -1,5 +1,5 @@
 ---
-slug: "/Popular-Pages"
+slug: "/popular-pages"
 date: "2019-05-04"
 title: "Elements > Popular-Pages"
 ---
@@ -42,7 +42,8 @@ title: "Elements > Popular-Pages"
 
 ```html
    <rds-popular-pages
-  [customPopularPageItems]="customPopularPageItems"></rds-popular-pages>
+  [customPopularPageItems]="customPopularPageItems"
+></rds-popular-pages>
 ```
 </div>
 </div>

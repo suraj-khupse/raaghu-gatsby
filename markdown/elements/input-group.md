@@ -41,22 +41,13 @@ title: "Elements > Input-Group"
 <div class="row m-0">
 
 ```html
-<rds-input-group>
-<label>{{label}}</label>
-<div
-  class="input-group mb-2"
-    [ngClass]="{'input-group-sm': size == 'sm', 'input-group-lg': size == 'lg'}">
-    <input
-      type="text"
-      class="form-control"
-      aria-label="Sizing example input"
-      aria-describedby="button-addon1"
-      placeholder="placeholder"/>
-    <button class="btn btn-outline-secondary" type="button" id="button-addon1">
-      Button
-    </button>
-  </div>
-</rds-input-group>
+<rds-input-group
+  colorVariant="primary"
+  size="small"
+  position="top"
+  placeholder="Placeholder Text"
+  buttonLabel="button"
+></rds-input-group>
 ```
 </div>
 </div>

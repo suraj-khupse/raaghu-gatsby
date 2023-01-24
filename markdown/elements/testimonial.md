@@ -33,7 +33,7 @@ title: "Elements > Testimonial"
          <div class="contents p-5">
             <div class="row">
               <div class="col-md-12">
-                <img src="/images/testimonial.png" class="img-fluid w-50">
+                <img src="/images/testimonial.png" class="img-fluid w-70">
                </div>
               </div>
             </div>
@@ -43,7 +43,10 @@ title: "Elements > Testimonial"
 <div class="row m-0">
 
 ```html
-<rds-testimonial [testimonialItems]="testimonialItems"></rds-testimonial>
+<rds-testimonial
+  [testimonialItems]="testimonialItems"
+  role="Default"
+></rds-testimonial>
 ```
 
 </div>

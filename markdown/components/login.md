@@ -39,18 +39,7 @@ title: "Components > Login"
 <div class="row m-0">
 
 ```html
-<rds-login-comp
-  [userNameData]="userNameData"
-  userPasswordData=""
-  rememeberMe=""
-  TenantNameData=""
-  TenancyName=""
-  TenantName=""
-  UserName="Email/Username"
-  Password="Password"
-  userNameInputType="email"
-  userPasswordInputType=""
-></rds-login-comp> 
+<rds-comp-login></rds-comp-login>
 ```
 </div>
 </div>

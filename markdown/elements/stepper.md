@@ -16,6 +16,203 @@ title: "Elements > Stepper"
 
 <!-- Basic -->
 <section class="py-4">
+    <h6>Default</h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewBasic8-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic8" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularBasic8-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic8" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="PreviewBasic8" role="tabpanel" aria-labelledby="PreviewBasic8-tab">
+         <div class="contents p-5">
+            <div class="row">
+               <div class="col-md-12">
+                 <img src="/images/stepper-simple.png" class="img-fluid w-75">
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade show" id="AngularBasic8" role="tabpanel" aria-labelledby="AngularBasic8-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<div>
+  <rds-stepper
+    [stepperList]="stepperList"
+    [stepperType]="stepperType"
+    [readOnly]="readOnly"
+    [activePageNumber]="1"
+  ></rds-stepper>
+  <div naveContent class="tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane fade show active p-2"
+      id="nav-home"
+      role="tabpanel"
+      aria-labelledby="nav-home-tab"
+    >
+      <div class="contents">
+        <p>
+          This is some placeholder content the Profile tab's associated content.
+          Clicking another tab will toggle the visibility of this one for the
+          next.
+          <br />
+          The tab JavaScript swaps classes to control the content visibility and
+          styling. You can use it with tabs, pills, and any other
+        </p>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-profile"
+      role="tabpanel"
+      aria-labelledby="nav-profile-tab"
+    >
+      <div class="contents bg-white p-2">
+        This is some placeholder content the Home tab's associated content.
+        Clicking another tab will toggle the visibility of this one for the
+        next.
+        <br />
+        The tab JavaScript swaps classes to control the content visibility tab
+        JavaScript swaps classes to control the content visibility tab
+        JavaScript swaps classes to control the content visibilityand styling.
+        You can use it with tabs, pills, and any other .nav-powered navigation.
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-contact"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <div class="contents bg-white p-2">Tab3 is showing with nav tab</div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-deabled"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <div class="contents bg-white p-2">test</div>
+    </div>
+  </div>
+</div>
+```
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panel -->
+<section class="py-4">
+    <h6>Panel </h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewBasic4-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic4" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularBasic4-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic4" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="PreviewBasic4" role="tabpanel" aria-labelledby="PreviewBasic4-tab">
+         <div class="contents p-5">
+            <div class="row">
+               <div class="col-md-12">
+                 <img src="/images/stepper-panel-arrow.png" class="img-fluid w-75">
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade show" id="AngularBasic4" role="tabpanel" aria-labelledby="AngularBasic4-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<div>
+  <rds-stepper
+    [stepperList]="stepperList"
+    [stepperType]="stepperType"
+    [readOnly]="readOnly"
+    [activePageNumber]="1"
+  ></rds-stepper>
+  <div naveContent class="tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane fade show active p-2"
+      id="nav-home"
+      role="tabpanel"
+      aria-labelledby="nav-home-tab"
+    >
+      <div class="contents">
+        <p>
+          This is some placeholder content the Profile tab's associated content.
+          Clicking another tab will toggle the visibility of this one for the
+          next.
+          <br />
+          The tab JavaScript swaps classes to control the content visibility and
+          styling. You can use it with tabs, pills, and any other
+        </p>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-profile"
+      role="tabpanel"
+      aria-labelledby="nav-profile-tab"
+    >
+      <div class="contents bg-white p-2">
+        This is some placeholder content the Home tab's associated content.
+        Clicking another tab will toggle the visibility of this one for the
+        next.
+        <br />
+        The tab JavaScript swaps classes to control the content visibility tab
+        JavaScript swaps classes to control the content visibility tab
+        JavaScript swaps classes to control the content visibilityand styling.
+        You can use it with tabs, pills, and any other .nav-powered navigation.
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-contact"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <div class="contents bg-white p-2">Tab3 is showing with nav tab</div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-deabled"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <div class="contents bg-white p-2">test</div>
+    </div>
+  </div>
+</div>
+```
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Bullets -->
+<section class="py-4">
     <h6>Bullets</h6>
     <div class="py-3">
       <div class="cust-tabs">
@@ -112,10 +309,109 @@ title: "Elements > Stepper"
     </div>
   </section>
 
+<!-- Panel Border -->
+<section class="py-4">
+    <h6>Panel Border</h6>
+    <div class="py-3">
+      <div class="cust-tabs">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="PreviewBasic5-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic5" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="AngularBasic5-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic5" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content card border" id="myTabContent">
+        <div class="tab-pane fade show active" id="PreviewBasic5" role="tabpanel" aria-labelledby="PreviewBasic5-tab">
+         <div class="contents p-5">
+            <div class="row">
+               <div class="col-md-12">
+                 <img src="/images/stepper-with-border.png" class="img-fluid w-75">
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade show" id="AngularBasic5" role="tabpanel" aria-labelledby="AngularBasic5-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<div>
+  <rds-stepper
+    [stepperList]="stepperList"
+    [stepperType]="stepperType"
+    [readOnly]="readOnly"
+    [activePageNumber]="1"
+  ></rds-stepper>
+  <div naveContent class="tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane fade show active p-2"
+      id="nav-home"
+      role="tabpanel"
+      aria-labelledby="nav-home-tab"
+    >
+      <div class="contents">
+        <p>
+          This is some placeholder content the Profile tab's associated content.
+          Clicking another tab will toggle the visibility of this one for the
+          next.
+          <br />
+          The tab JavaScript swaps classes to control the content visibility and
+          styling. You can use it with tabs, pills, and any other
+        </p>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-profile"
+      role="tabpanel"
+      aria-labelledby="nav-profile-tab"
+    >
+      <div class="contents bg-white p-2">
+        This is some placeholder content the Home tab's associated content.
+        Clicking another tab will toggle the visibility of this one for the
+        next.
+        <br />
+        The tab JavaScript swaps classes to control the content visibility tab
+        JavaScript swaps classes to control the content visibility tab
+        JavaScript swaps classes to control the content visibilityand styling.
+        You can use it with tabs, pills, and any other .nav-powered navigation.
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-contact"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <div class="contents bg-white p-2">Tab3 is showing with nav tab</div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-deabled"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <div class="contents bg-white p-2">test</div>
+    </div>
+  </div>
+</div>
+```
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-<!-- Basic -->
+
+
+<!-- Bullets Text -->
 <section class="py-4">
     <h6>Bullets Text</h6>
     <div class="py-3">
@@ -217,7 +513,7 @@ title: "Elements > Stepper"
 
 <!-- Basic -->
 <section class="py-4">
-    <h6>Panel</h6>
+    <h6>Panel Arrow</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -313,307 +609,6 @@ title: "Elements > Stepper"
     </div>
   </section>
 
-
-
-<!-- Basic -->
-<section class="py-4">
-    <h6>Panel Arrow</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewBasic4-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic4" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic4-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic4" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewBasic4" role="tabpanel" aria-labelledby="PreviewBasic4-tab">
-         <div class="contents p-5">
-            <div class="row">
-               <div class="col-md-12">
-                 <img src="/images/stepper-panel-arrow.png" class="img-fluid w-75">
-                </div>
-          </div>
-        </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularBasic4" role="tabpanel" aria-labelledby="AngularBasic4-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
-
-```html
-<div>
-  <rds-stepper
-    [stepperList]="stepperList"
-    [stepperType]="stepperType"
-    [readOnly]="readOnly"
-    [activePageNumber]="1"
-  ></rds-stepper>
-  <div naveContent class="tab-content" id="nav-tabContent">
-    <div
-      class="tab-pane fade show active p-2"
-      id="nav-home"
-      role="tabpanel"
-      aria-labelledby="nav-home-tab"
-    >
-      <div class="contents">
-        <p>
-          This is some placeholder content the Profile tab's associated content.
-          Clicking another tab will toggle the visibility of this one for the
-          next.
-          <br />
-          The tab JavaScript swaps classes to control the content visibility and
-          styling. You can use it with tabs, pills, and any other
-        </p>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-profile"
-      role="tabpanel"
-      aria-labelledby="nav-profile-tab"
-    >
-      <div class="contents bg-white p-2">
-        This is some placeholder content the Home tab's associated content.
-        Clicking another tab will toggle the visibility of this one for the
-        next.
-        <br />
-        The tab JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibilityand styling.
-        You can use it with tabs, pills, and any other .nav-powered navigation.
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-contact"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">Tab3 is showing with nav tab</div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-deabled"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">test</div>
-    </div>
-  </div>
-</div>
-```
-
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-
-<!-- Basic -->
-<section class="py-4">
-    <h6>Panel Border</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewBasic5-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic5" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic5-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic5" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewBasic5" role="tabpanel" aria-labelledby="PreviewBasic5-tab">
-         <div class="contents p-5">
-            <div class="row">
-               <div class="col-md-12">
-                 <img src="/images/stepper-with-border.png" class="img-fluid w-75">
-                </div>
-          </div>
-        </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularBasic5" role="tabpanel" aria-labelledby="AngularBasic5-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
-
-```html
-<div>
-  <rds-stepper
-    [stepperList]="stepperList"
-    [stepperType]="stepperType"
-    [readOnly]="readOnly"
-    [activePageNumber]="1"
-  ></rds-stepper>
-  <div naveContent class="tab-content" id="nav-tabContent">
-    <div
-      class="tab-pane fade show active p-2"
-      id="nav-home"
-      role="tabpanel"
-      aria-labelledby="nav-home-tab"
-    >
-      <div class="contents">
-        <p>
-          This is some placeholder content the Profile tab's associated content.
-          Clicking another tab will toggle the visibility of this one for the
-          next.
-          <br />
-          The tab JavaScript swaps classes to control the content visibility and
-          styling. You can use it with tabs, pills, and any other
-        </p>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-profile"
-      role="tabpanel"
-      aria-labelledby="nav-profile-tab"
-    >
-      <div class="contents bg-white p-2">
-        This is some placeholder content the Home tab's associated content.
-        Clicking another tab will toggle the visibility of this one for the
-        next.
-        <br />
-        The tab JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibilityand styling.
-        You can use it with tabs, pills, and any other .nav-powered navigation.
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-contact"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">Tab3 is showing with nav tab</div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-deabled"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">test</div>
-    </div>
-  </div>
-</div>
-```
-
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-<!-- Basic -->
-<section class="py-4">
-    <h6>Panel Simple</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewBasic6-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic6" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic6-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic6" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewBasic6" role="tabpanel" aria-labelledby="PreviewBasic6-tab">
-         <div class="contents p-5">
-            <div class="row">
-               <div class="col-md-12">
-                 <img src="/images/stepper-panel-simple.png" class="imf-fluid w-75">
-                </div>
-          </div>
-        </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularBasic6" role="tabpanel" aria-labelledby="AngularBasic6-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
-
-```html
-<div>
-  <rds-stepper
-    [stepperList]="stepperList"
-    [stepperType]="stepperType"
-    [readOnly]="readOnly"
-    [activePageNumber]="1"
-  ></rds-stepper>
-  <div naveContent class="tab-content" id="nav-tabContent">
-    <div
-      class="tab-pane fade show active p-2"
-      id="nav-home"
-      role="tabpanel"
-      aria-labelledby="nav-home-tab"
-    >
-      <div class="contents">
-        <p>
-          This is some placeholder content the Profile tab's associated content.
-          Clicking another tab will toggle the visibility of this one for the
-          next.
-          <br />
-          The tab JavaScript swaps classes to control the content visibility and
-          styling. You can use it with tabs, pills, and any other
-        </p>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-profile"
-      role="tabpanel"
-      aria-labelledby="nav-profile-tab"
-    >
-      <div class="contents bg-white p-2">
-        This is some placeholder content the Home tab's associated content.
-        Clicking another tab will toggle the visibility of this one for the
-        next.
-        <br />
-        The tab JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibilityand styling.
-        You can use it with tabs, pills, and any other .nav-powered navigation.
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-contact"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">Tab3 is showing with nav tab</div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-deabled"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">test</div>
-    </div>
-  </div>
-</div>
-```
-
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
- 
 
 <!-- Basic -->
 <section class="py-4">
@@ -717,107 +712,7 @@ title: "Elements > Stepper"
 
 <!-- Basic -->
 <section class="py-4">
-    <h6>Simple</h6>
-    <div class="py-3">
-      <div class="cust-tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewBasic8-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic8" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic8-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic8" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="PreviewBasic8" role="tabpanel" aria-labelledby="PreviewBasic8-tab">
-         <div class="contents p-5">
-            <div class="row">
-               <div class="col-md-12">
-                 <img src="/images/stepper-simple.png" class="img-fluid w-75">
-                </div>
-          </div>
-        </div>
-        </div>
-        <div class="tab-pane fade show" id="AngularBasic8" role="tabpanel" aria-labelledby="AngularBasic8-tab">
-          <div class="contents bg-code">
-<div class="row m-0">
-
-```html
-<div>
-  <rds-stepper
-    [stepperList]="stepperList"
-    [stepperType]="stepperType"
-    [readOnly]="readOnly"
-    [activePageNumber]="1"
-  ></rds-stepper>
-  <div naveContent class="tab-content" id="nav-tabContent">
-    <div
-      class="tab-pane fade show active p-2"
-      id="nav-home"
-      role="tabpanel"
-      aria-labelledby="nav-home-tab"
-    >
-      <div class="contents">
-        <p>
-          This is some placeholder content the Profile tab's associated content.
-          Clicking another tab will toggle the visibility of this one for the
-          next.
-          <br />
-          The tab JavaScript swaps classes to control the content visibility and
-          styling. You can use it with tabs, pills, and any other
-        </p>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-profile"
-      role="tabpanel"
-      aria-labelledby="nav-profile-tab"
-    >
-      <div class="contents bg-white p-2">
-        This is some placeholder content the Home tab's associated content.
-        Clicking another tab will toggle the visibility of this one for the
-        next.
-        <br />
-        The tab JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibility tab
-        JavaScript swaps classes to control the content visibilityand styling.
-        You can use it with tabs, pills, and any other .nav-powered navigation.
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-contact"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">Tab3 is showing with nav tab</div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="nav-deabled"
-      role="tabpanel"
-      aria-labelledby="nav-contact-tab"
-    >
-      <div class="contents bg-white p-2">test</div>
-    </div>
-  </div>
-</div>
-```
-
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-<!-- Basic -->
-<section class="py-4">
-    <h6>Multi Circle-1</h6>
+    <h6>Multi Circle with checks</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -917,7 +812,7 @@ title: "Elements > Stepper"
 
 <!-- Basic -->
 <section class="py-4">
-    <h6>Multi Circle-2</h6>
+    <h6>Multi Circle with numbers</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -1016,7 +911,7 @@ title: "Elements > Stepper"
 
 <!-- Basic -->
 <section class="py-4">
-    <h6>Multi Circle-3</h6>
+    <h6>Multi Circle with vertical checks</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">

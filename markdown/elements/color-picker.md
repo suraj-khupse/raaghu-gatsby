@@ -40,10 +40,11 @@ title: "Elements > Color-picker"
 <div class="row m-0">
 
 ```html
-   <rds-color-picker
+<rds-color-picker
   value="#800080"
   label="Color picker"
   [disabled]="false"
+  position="start"
 ></rds-color-picker>
 ```
 </div>

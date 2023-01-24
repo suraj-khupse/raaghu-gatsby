@@ -40,8 +40,8 @@ title: "Components > Integration"
 
 ```html
 <rds-comp-integration
-[integrationList]="integrationList">
-</rds-comp-integration>
+  [integrationList]="integrationList"
+></rds-comp-integration>
 ```
 </div>
 </div>

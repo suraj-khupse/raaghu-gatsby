@@ -42,11 +42,7 @@ title: "Elements > Tags"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-tags
-  tagType="square"
-  roles="TagWithScroll"
-  colorVariant="primary"
-></rds-tags>
+<rds-tags tagType="square" role="basic" colorVariant="primary"></rds-tags>
 ```
 </div>
          </div>
@@ -85,11 +81,7 @@ title: "Elements > Tags"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-tags
-  tagType="square"
-  role="tagWithScroll"
-  colorVariant="primary"
-></rds-tags>
+<rds-tags tagType="square" role="basic" colorVariant="primary"></rds-tags>
 ```
 </div>
          </div>

@@ -41,7 +41,7 @@ title: "Components > Tenant Management"
 <div class="row m-0">
 
 ```html
- <rds-comp-tenant-management
+<rds-comp-tenant-management
   [settingsTenantEditionList]="settingsTenantEditionList"
 ></rds-comp-tenant-management>
 ```

@@ -57,6 +57,7 @@ title: "Elements > Big-number-widget"
     [textAlign]="textAlign"
   ></rds-big-number-widget>
 </div>
+
 ```
 </div>
 </div>
@@ -120,6 +121,8 @@ title: "Elements > Big-number-widget"
     ></rds-label>
   </rds-big-number-widget>
 </div>
+
+
 ```
 </div>
 </div>
@@ -168,21 +171,18 @@ title: "Elements > Big-number-widget"
     [subTitleColorVariant]="subTitleColorVariant"
     [role]="role"
   >
-    <rds-icon
-      class="ms-1"
-      [name]="'triangle_up'"
-      [stroke]="true"
-      [fill]="true"
-      [colorVariant]="subTitleColorVariant"
-      [height]="'15px'"
-      [width]="'15px'"
-    ></rds-icon>
-    <rds-label
-      label="75%"
-      class="ps-2 text-{{subTitleColorVariant}} fs-5"
-    ></rds-label>
+    <rds-chart-bar-horizontal
+      [chartLabels]="chartLabels"
+      [chartWidth]="chartWidth"
+      [chartHeight]="chartHeight"
+      [chartDataSets]="chartDatasets"
+      [chartOptions]="chartOptions"
+    ></rds-chart-bar-horizontal>
   </rds-big-number-widget>
 </div>
+
+
+
 ```
 </div>
 </div>
@@ -286,14 +286,7 @@ title: "Elements > Big-number-widget"
     [colorVariant]="colorVariant"
     [subTitleColorVariant]="subTitleColorVariant"
     [role]="role"
-  >
-    <rds-icon
-      name="users"
-      [colorVariant]="subTitleColorVariant"
-      [height]="'30px'"
-      [width]="'30px'"
-    ></rds-icon>
-  </rds-big-number-widget>
+  ></rds-big-number-widget>
 </div>
 ```
 </div>

@@ -74,7 +74,7 @@ title: "Elements > File-uploader"
           <div class="contents p-5">
             <div class="row">
                  <div class="col-md-12">
-                    <img src="/images/file-uploader-advanced.png" class="img-fluid w-75">
+                    <img src="/images/file-uploader-multiple.png" class="img-fluid w-75">
                  </div>                   
             </div>
           </div>
@@ -85,7 +85,7 @@ title: "Elements > File-uploader"
 
 ```html
 <rds-file-uploader
-  size="medium"
+  size="small"
   label="Upload Files"
   [multipleFiles]="true"
   role="fileUpload"

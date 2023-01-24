@@ -29,7 +29,7 @@ title: "Components > Secrets"
          <div class="contents p-5">
               <div class="row">
                  <div class="col-md-12">
-                       <img src="\images\secrets.png" class="img-fluid w-50">
+                       <img src="\images\secrets.png" class="img-fluid w-100">
                  </div>              
               </div>
                        

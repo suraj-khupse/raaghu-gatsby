@@ -38,8 +38,8 @@ title: "Components > Claims"
           <div class="contents bg-code">
 <div class="row m-0">
 
-```html
-<rds-comp-claims [ClaimData]="ClaimData"></rds-comp-claims>   
+```html 
+<rds-comp-claims [ClaimData]="ClaimData"></rds-comp-claims>
 ```
 </div>
 </div>

@@ -11,7 +11,7 @@ title: "Components > Marketing Website Newsletter"
 
 <p>Provides a card with different buttons as an option selector </p>
 <section class="py-4">        
-    <h6>Tempelate 1</h6>                                                                                     
+    <h6>With Image</h6>                                                                                     
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -28,7 +28,7 @@ title: "Components > Marketing Website Newsletter"
          <div class="contents p-5">
               <div class="row">
             <div class="col-md-12">
-              <img src="/images/marketing-website-newsletter1.png" class="img-fluid">
+              <img src="/images/marketing-website-newsletter1.png" class="img-fluid w-70">
             </div>
            </div>
                        
@@ -40,7 +40,7 @@ title: "Components > Marketing Website Newsletter"
 
 ```html
 <rds-comp-marketing-website-newsletter
-  templateType="Template_1"
+  templateType="with_image"
 ></rds-comp-marketing-website-newsletter>
 ```
 </div>
@@ -52,7 +52,7 @@ title: "Components > Marketing Website Newsletter"
   </section>
   
 <section class="py-4">                                                                                             
-    <h6>Template 2</h6>
+    <h6>With CTA</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab2" role="tablist">
@@ -69,7 +69,7 @@ title: "Components > Marketing Website Newsletter"
          <div class="contents p-5">
               <div class="row">
              <div class="col-md-12">
-                <img src="/images/marketing-news-letter2.png" class="img-fluid w-50">
+                <img src="/images/marketing-news-letter2.png" class="img-fluid w-70">
              </div>
            </div>
                        
@@ -80,9 +80,9 @@ title: "Components > Marketing Website Newsletter"
 <div class="row m-0">
 
 ```html
-<app-rds-comp-marketing-website-newsletter
-  templateType="Template_2"
-></app-rds-comp-marketing-website-newsletter>
+<rds-comp-marketing-website-newsletter
+  templateType="with_CTA"
+></rds-comp-marketing-website-newsletter>
 ```
 </div>
 </div>
@@ -94,7 +94,7 @@ title: "Components > Marketing Website Newsletter"
                 
                                                                                                                  
 <section class="py-4">                                                                                             
-    <h6>Template 3</h6>
+    <h6>With Discount Offer</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab3" role="tablist">
@@ -111,7 +111,7 @@ title: "Components > Marketing Website Newsletter"
          <div class="contents  p-5">
               <div class="row">
              <div class="col-md-12">
-               <img src="/images/marketing-news-letter3.png" class="img-fluid w-50">
+               <img src="/images/marketing-news-letter3.png" class="img-fluid w-70">
              </div>  
            </div>
                        
@@ -122,9 +122,9 @@ title: "Components > Marketing Website Newsletter"
 <div class="row m-0">
 
 ```html
-<app-rds-comp-marketing-website-newsletter
-  templateType="Template_3"
-></app-rds-comp-marketing-website-newsletter>
+<rds-comp-marketing-website-newsletter
+  templateType="with_discount_offer"
+></rds-comp-marketing-website-newsletter>
 ```
 </div>
 </div>
@@ -136,7 +136,7 @@ title: "Components > Marketing Website Newsletter"
 
 
 <section class="py-4">                                                                                             
-    <h6>Template 4</h6>
+    <h6>With Email Input</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab3" role="tablist">
@@ -153,7 +153,7 @@ title: "Components > Marketing Website Newsletter"
          <div class="contents  p-5">
               <div class="row">
              <div class="col-md-12">
-               <img src="/images/marketing-news-letter4.png" class="img-fluid w-50">
+               <img src="/images/marketing-news-letter4.png" class="img-fluid w-70">
              </div>  
            </div>
                        
@@ -166,7 +166,7 @@ title: "Components > Marketing Website Newsletter"
 ```html
 
 <rds-comp-marketing-website-newsletter
-  templateType="Template_4"
+  templateType="with_email_input"
 ></rds-comp-marketing-website-newsletter>
 ```
 </div>

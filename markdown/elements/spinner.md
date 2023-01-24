@@ -42,9 +42,11 @@ title: "Elements > Spinner"
 <div class="row m-0">
 
 ```html
-   <div class="col-md-12">
- <rds-spinner [spinnerType]="false"></rds-spinner>
-</div>
+ <rds-spinner
+  [spinnerType]="false"
+  size="md"
+  colorVariant="primary"
+></rds-spinner>
 ```
 </div>
 </div>
@@ -56,7 +58,7 @@ title: "Elements > Spinner"
 
 
 <section class="py-4">
-    <h6>Glowing</h6>
+    <h6>Growing</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -84,9 +86,7 @@ title: "Elements > Spinner"
 <div class="row m-0">
 
 ```html
-   <div class="col-md-12">
-<rds-spinner [spinnerType]="true"></rds-spinner>
-</div>
+  <rds-spinner [spinnerType]="true" colorVariant="primary"></rds-spinner>
 ```
 </div>
 </div>

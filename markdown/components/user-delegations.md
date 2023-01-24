@@ -37,16 +37,16 @@ title: "Components > User-delegations"
 <div class="row m-0">
 
 ```html
-<rds-user-delegations
-[rdsDeligateTableHeader]="rdsDeligateTableHeader"
-[rdsDeligateTableData]="rdsDeligateTableData"
-[tabClosed]="false"
-[recordsPerpage]="10"
-[pagination]="false"
-tableWidth=""
-[buttonSpinner]="true"
-tableStyle="">
-</rds-user-delegations>
+<rds-comp-user-delegations
+  [userList]="userList"
+  [rdsDeligateTableHeader]="rdsDeligateTableHeader"
+  [rdsDeligateTableData]="rdsDeligateTableData"
+  [recordsPerpage]="10"
+  [pagination]="false"
+  tableWidth=""
+  [buttonSpinner]="true"
+  tableStyle=""
+></rds-comp-user-delegations>
 ```
 </div>
 </div>

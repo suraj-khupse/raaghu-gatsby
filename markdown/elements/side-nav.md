@@ -41,14 +41,10 @@ title: "Elements > Side-nav"
 <div class="row m-0">
 
 ```html
-<div class="row">
-  <div class="col-lg-2">
     <rds-side-nav
       [sidenavItems]="sidenavItems"
-      [collapseRequired]="false"
+      [collapseRequired]="collapseRequired"
     ></rds-side-nav>
-  </div>
-</div>
 ```
 </div>
 </div>

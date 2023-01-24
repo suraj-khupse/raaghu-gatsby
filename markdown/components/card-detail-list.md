@@ -39,9 +39,7 @@ title: "Components > Card-detail-list"
 <div class="row m-0">
 
 ```html
-  <rds-comp-card-detail-list
-  [listItems]="listItems"
-></rds-comp-card-detail-list>    
+<rds-comp-card-detail-list [listItems]="listItems"></rds-comp-card-detail-list>  
 ```
 </div>
 </div>

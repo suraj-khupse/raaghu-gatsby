@@ -40,9 +40,12 @@ title: "Components > Login Attempts"
 
 ```html
 
-<rds-comp-login-attempts
+<app-rds-comp-login-attempts
+  [LoginAttempts]="LoginAttempts"
+  [operationLogs]="operationLogs"
+  [operationLogsHeaders]="operationLogsHeaders"
   [listItemsResult]="listItemsResult"
-></rds-comp-login-attempts>
+></app-rds-comp-login-attempts>
 ```
 </div>
 </div>

@@ -38,13 +38,13 @@ title: "Components > tenant-list"
 <div class="row m-0">
 
 ```html
-<app-rds-comp-tenant-list
+<rds-comp-tenant-list
   [tenantSettingsInfo]="tenantSettingsInfo"
   [tenantData]="tenantData"
   [tenantList]="tenantList"
   [editionList]="editionList"
   [tenantHeaders]="tenantHeaders"
-></app-rds-comp-tenant-list>
+></rds-comp-tenant-list>
 ```
 </div>
 </div>
