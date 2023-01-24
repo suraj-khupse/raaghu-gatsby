@@ -42,9 +42,9 @@ title: "Components > Admin-Dashboard"
 <div class="row m-0">
 
 ```html
-<rds-comp-admin-dashboard
+<rds-admin-dashboard
   [memberActivityTableHeader]="memberActivityTableHeader"
-></rds-comp-admin-dashboard>
+></rds-admin-dashboard>
 ```
 </div>
 </div>
