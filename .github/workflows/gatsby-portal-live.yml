@@ -3,7 +3,18 @@ name: Build and deploy gatsby portal
 on:
   push:
     branches: [development]
+    
+  workflow_dispatch:
 
+env:
+  AZURE_WEBAPP_NAME: raaghugatsby   # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  NODE_VERSION: '18.12.1'                # set this to the node version to use
+  NODE_OPTIONS: "--max_old_space_size=6144"
+
+permissions:
+  contents: read
+  
 jobs:
   build:
     runs-on: windows-latest
@@ -52,7 +63,7 @@ jobs:
          action: "upload"
          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-         app_location: "./raaghu-mfe/gatsby/public" # App source code path
+         app_location: "./raaghu-gatsby/public" # App source code path
          api_location: "" # Api source code path - optional
          output_location: "public" # Built app content directory - optional
          ###### End of Repository/Build Configurations ######
