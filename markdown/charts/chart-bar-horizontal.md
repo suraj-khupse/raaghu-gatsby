@@ -1,5 +1,5 @@
 ---
-slug: "/Chart-Bar-Horizontal"
+slug: "/chart-bar-horizontal"
 date: "2019-05-04"
 title: "Charts > Chart-Bar-Horizontal"
 ---
@@ -40,12 +40,12 @@ title: "Charts > Chart-Bar-Horizontal"
          <div class="tab-pane fade show" id="AngularBorder" role="tabpanel" aria-labelledby="AngularBorder-tab">
           <div class="contents bg-code">
 <div class="row m-0">
-
+chart-with-border-radius
 ```html
-  <rds-chart-bar-horizontal
+<rds-chart-bar-horizontal
   [chartWidth]="100"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-bar-horizontal>
 ```
@@ -88,10 +88,11 @@ title: "Charts > Chart-Bar-Horizontal"
 <div class="row m-0">
 
 ```html
-  <rds-chart-bar-horizontal
-  [chartWidth]="100"
+<rds-chart-bar-horizontal
+  [chartWidth]="500"
+  [chartHeight]="400"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-bar-horizontal>
 ```
@@ -134,10 +135,10 @@ title: "Charts > Chart-Bar-Horizontal"
 <div class="row m-0">
 
 ```html
-  <rds-chart-bar-horizontal
+<rds-chart-bar-horizontal
   [chartWidth]="100"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-bar-horizontal>
 ```
@@ -180,10 +181,10 @@ title: "Charts > Chart-Bar-Horizontal"
 <div class="row m-0">
 
 ```html
-  <rds-chart-bar-horizontal
+<rds-chart-bar-horizontal
   [chartWidth]="100"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-bar-horizontal>
 ```

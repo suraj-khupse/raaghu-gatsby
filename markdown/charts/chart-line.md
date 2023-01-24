@@ -43,11 +43,9 @@ title: "Charts > Chart-line"
 
 ```html
 <rds-chart-line
-  chartId="lineChart0"
   [chartWidth]="600"
   [chartHeight]="400"
   [chartLabels]="chartLabels"
-  [gradient]="false"
   [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-line>
@@ -88,10 +86,11 @@ title: "Charts > Chart-line"
 
 ```html
 <rds-chart-line
-    [chartWidth]="600"
-    [chartLabels]="chartLabels"
-    [ChartDataSets]="ChartDataSets"
-    [chartOptions]="chartOptions"
+  [chartWidth]="600"
+  [chartHeight]="400"
+  [chartLabels]="chartLabels"
+  [chartDataSets]="chartDataSets"
+  [chartOptions]="chartOptions"
 ></rds-chart-line>
 ```
 </div>
@@ -130,10 +129,11 @@ title: "Charts > Chart-line"
 
 ```html
 <rds-chart-line
-    [chartWidth]="600"
-    [chartLabels]="chartLabels"
-    [ChartDataSets]="ChartDataSets"
-    [chartOptions]="chartOptions"
+  [chartWidth]="600"
+  [chartHeight]="400"
+  [chartLabels]="chartLabels"
+  [chartDataSets]="chartDataSets"
+  [chartOptions]="chartOptions"
 ></rds-chart-line>
 ```
 </div>
@@ -172,10 +172,11 @@ title: "Charts > Chart-line"
 
 ```html
 <rds-chart-line
-    [chartWidth]="600"
-    [chartLabels]="chartLabels"
-    [ChartDataSets]="ChartDataSets"
-    [chartOptions]="chartOptions"
+  [chartWidth]="600"
+  [chartHeight]="400"
+  [chartLabels]="chartLabels"
+  [chartDataSets]="chartDataSets"
+  [chartOptions]="chartOptions"
 ></rds-chart-line>
 ```
 </div>
@@ -215,11 +216,9 @@ title: "Charts > Chart-line"
 
 ```html
 <rds-chart-line
-  chartId="lineChart0"
   [chartWidth]="600"
   [chartHeight]="400"
   [chartLabels]="chartLabels"
-  [gradient]="false"
   [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-line>

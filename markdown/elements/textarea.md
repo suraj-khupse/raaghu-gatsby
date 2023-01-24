@@ -174,7 +174,7 @@ title: "Elements > Textarea"
 
 ```html
 <rds-textarea
-  [disabled]="true"
+  [readonly]="true"
   label="Text area"
   placeholderText="Add Placeholder"
 ></rds-textarea>
