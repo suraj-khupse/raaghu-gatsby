@@ -3,13 +3,12 @@ name: Build and deploy gatsby portal
 on:
   push:
     branches: [development]
-    
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: '.'              # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: '18.12.1'                # set this to the node version to use
+  AZURE_WEBAPP_NAME: '.'                    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.'            # set this to the path to your web app project, defaults to the repository root
+  NODE_VERSION: '18.12.1'                   # set this to the node version to use
   NODE_OPTIONS: "--max_old_space_size=6144"
 
 permissions:
@@ -27,14 +26,9 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
   
-    - name: npm install gatsby
-            
+    - name: install/build gatsby
       run: |
           npm install --force
-    
-    - name: build gatsby
-     
-      run: |
           npm run build
           
     - name: Upload artifact for deployment job
@@ -54,7 +48,7 @@ jobs:
         name: node-app
         path: ./public
         
-    - name: Build And Deploy
+    - name: Deploy
       id: builddeploy   
       uses: Azure/static-web-apps-deploy@v1
       with:
