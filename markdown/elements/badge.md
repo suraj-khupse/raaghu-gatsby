@@ -4,7 +4,6 @@ date: "2019-05-04"
 title: "Elements > Badge"
 ---
 
-
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
@@ -25,6 +24,9 @@ title: "Elements > Badge"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -54,6 +56,24 @@ title: "Elements > Badge"
 </div>
           </div>
         </div>
+<!-- React Start -->
+        <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+<rds-badge
+  size="medium"
+  label="badge"
+  badgeType="rectangle"
+  colorVariant="danger"
+></rds-badge>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
       </div>
     </div>
   </section>
@@ -67,6 +87,9 @@ title: "Elements > Badge"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularButton-tab" data-bs-toggle="tab" data-bs-target="#AngularButton" type="button" role="tab" aria-controls="AngularButton" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactButton-tab" data-bs-toggle="tab" data-bs-target="#ReactButton" type="button" role="tab" aria-controls="ReactButton" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -99,6 +122,26 @@ title: "Elements > Badge"
 </div>
           </div>
         </div>
+        <!-- React start -->
+             <div class="tab-pane fade show" id="ReactButton" role="tabpanel" aria-labelledby="ReactButton-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<RdsButton colorVariant="primary" label="Button" type="button">
+  <RdsBadge
+    badgeType="rectangle"
+    colorVariant="danger"
+    label="9"
+    size="medium"
+  />
+</RdsButton>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
@@ -113,6 +156,9 @@ title: "Elements > Badge"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularIcon-tab" data-bs-toggle="tab" data-bs-target="#AngularIcon" type="button" role="tab" aria-controls="AngularIcon" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactIcon-tab" data-bs-toggle="tab" data-bs-target="#ReactIcon" type="button" role="tab" aria-controls="ReactIcon" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -157,6 +203,28 @@ title: "Elements > Badge"
 </div>
           </div>
         </div>
+        <!-- React start -->
+                <div class="tab-pane fade show" id="ReactIcon" role="tabpanel" aria-labelledby="ReactIcon-tab">
+          <div class="contents bg-light">
+<div class="row  text-white m-0 p-4">
+
+```html
+<span className="position-relative">
+  <RdsIcon height="33px" name="notification" stroke width="33px" />
+  <RdsBadge
+    badgeType="circle"
+    colorVariant="danger"
+    label="9"
+    positioned
+    size="large"
+  />
+</span>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
@@ -171,6 +239,9 @@ title: "Elements > Badge"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularPositioned-tab" data-bs-toggle="tab" data-bs-target="#AngularPositioned" type="button" role="tab" aria-controls="AngularPositioned" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactPositioned-tab" data-bs-toggle="tab" data-bs-target="#ReactPositioned" type="button" role="tab" aria-controls="ReactPositioned" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -208,11 +279,35 @@ title: "Elements > Badge"
 </div>
           </div>
         </div>
+        <!-- React start -->
+                <div class="tab-pane fade show" id="ReactPositioned" role="tabpanel" aria-labelledby="ReactPositioned-tab">
+          <div class="contents bg-light">
+<div class="row  text-white m-0 p-4">
+
+```html
+<RdsButton
+  class="position-relative"
+  colorVariant="primary"
+  label="Button"
+  size="medium"
+  type="button"
+>
+  <RdsBadge
+    badgeType="rectangle"
+    colorVariant="danger"
+    label="99"
+    positioned
+    size="medium"
+  />
+</RdsButton>
+```
+
+</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-
 
 <div class="py-4">
 <!-- Skeleton / Specifications -->
@@ -229,7 +324,6 @@ title: "Elements > Badge"
    </div>
  </div>
 </div>
-
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

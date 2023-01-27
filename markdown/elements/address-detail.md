@@ -9,7 +9,6 @@ title: "Elements > Address-Detail"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-
 #### Address Detail
 
 <p class="">Address detail is way to input details of address of a user.</p>
@@ -25,6 +24,9 @@ title: "Elements > Address-Detail"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -53,9 +55,30 @@ title: "Elements > Address-Detail"
   [Cardborder]="true"
 ></rds-address-detail>
 ```
+
 </div>
 </div>
   </div>
+  <!-- React start -->
+          <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<RdsAddressDetail
+  header="Address Header"
+  addressLine1="Address Line 1"
+  addressLine2="Address Line 2"
+  addressLine3="Address Line 3"
+  withIcon
+  cardborder
+/>
+```
+
+</div>
+</div>
+  </div>
+  <!-- React end -->
         </div>
       </div>
     </div>
