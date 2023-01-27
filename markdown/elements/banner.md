@@ -9,7 +9,6 @@ title: "Elements > Banner"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-
 #### Banner
 
 <p class="checkbox-def">A banner adds-up information regarding any upcoming updates on the webpage.</p>
@@ -25,6 +24,9 @@ title: "Elements > Banner"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -60,6 +62,28 @@ title: "Elements > Banner"
 </div>
           </div>
         </div>
+        <!-- React start -->
+                <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<RdsBanner
+  bannerText="Big news! We are excited to announce a brand new product."
+  colorVariant="info"
+  icon="information"
+  iconHeight="20px"
+  iconStroke
+  iconWidth="20px"
+  position="top"
+  textAlign="start"
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
@@ -80,11 +104,5 @@ title: "Elements > Banner"
                         </div>
                      </section>
 
-
-
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-
-

@@ -9,7 +9,6 @@ title: "Elements > accordion"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-
 #### Accordion
 
 <p class="checkbox-def">It is list of collapsible panels with clickable heading or down arrow, expanding to reveal hidden content. </p>
@@ -25,6 +24,9 @@ title: "Elements > accordion"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -59,10 +61,32 @@ title: "Elements > accordion"
 </div>
           </div>
         </div>
+
+  <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsAccordion accordionId="1" accordionType="Default">
+  <RdsAccordionItem id="1" title="Section 1 Title">
+    <h1>Hello</h1>
+  </RdsAccordionItem>
+  <RdsAccordionItem id="2" title="Section 2 Title">
+    <h1>Hello2</h1>
+  </RdsAccordionItem>
+</RdsAccordion>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
-
 
 <!-- Flush -->
   <section class="py-4">
@@ -75,6 +99,9 @@ title: "Elements > accordion"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularOutlined-tab" data-bs-toggle="tab" data-bs-target="#AngularOutlined" type="button" role="tab" aria-controls="AngularOutlined" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactOutlined-tab" data-bs-toggle="tab" data-bs-target="#ReactOutlined" type="button" role="tab" aria-controls="ReactOutlined" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -106,8 +133,29 @@ title: "Elements > accordion"
 </div>
           </div>
         </div>
-      </div>
+        <!-- React start -->
+        <div class="tab-pane fade show" id="ReactOutlined" role="tabpanel" aria-labelledby="ReactOutlined-tab">
+          <div class="contents bg-code">
+    <div class="row m-0">
+
+```html
+<RdsAccordion accordionId="1" accordionType="flush">
+  <RdsAccordionItem id="1" title="Section 1 Title">
+    <h1>Hello</h1>
+  </RdsAccordionItem>
+  <RdsAccordionItem id="2" title="Section 2 Title">
+    <h1>Hello2</h1>
+  </RdsAccordionItem>
+</RdsAccordion>
+```
+
+</div>
+          </div>
+        </div>
+      <!-- React End -->
+  </div>
     </div>
+
 </section>
 
 <!-- Accordian Always open -->
@@ -209,7 +257,6 @@ title: "Elements > accordion"
     </div>
 </section>
 
-
 <!-- Skeleton / Specifications -->
 <section class="py-4">
                         <h6>
@@ -226,8 +273,6 @@ title: "Elements > accordion"
                               </div>
                         </div>
                      </section>
-
-
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -25,6 +25,9 @@ title: "Elements > Alert"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -58,10 +61,30 @@ title: "Elements > Alert"
 </div>
           </div>
         </div>
+        <!-- React start -->
+               <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<RdsAlert
+  dismisable
+  alertmessage="This is close alert"
+  icon="information"
+  iconHeight="20px"
+  iconStroke
+  iconWidth="20px"
+  position="top"
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
-
 
 <!-- Skeleton / Specifications -->
 <section class="py-4">
@@ -79,7 +102,6 @@ title: "Elements > Alert"
                               </div>
                         </div>
                      </section>
-
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
