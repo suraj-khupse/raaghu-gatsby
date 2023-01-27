@@ -1,7 +1,7 @@
 ---
-slug: "/chart-bool"
+slug: "/chart-bubble"
 date: "2019-05-04"
-title: "Charts > Chart-bool"
+title: "Charts > Chart-bubble"
 ---
 
 <!-- CSS only -->
@@ -9,9 +9,9 @@ title: "Charts > Chart-bool"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-#### Boolean Chart
+#### Bubble Chart 
 
-<p class="">Boolean chart is extention of pie chart that may be use to track the progress of a task.</p>
+<p class="">A bubble is an extension of the scatter plot. It is used to visualize relationship for an observation with respect to three variables represented by the vertical, horizontal axis and the size of the bubble.</p>
 <section class="py-4">
     <h6>Default</h6>
     <div class="py-3">
@@ -28,27 +28,26 @@ title: "Charts > Chart-bool"
       <div class="tab-content card border" id="myTabContent">
         <div class="tab-pane fade show active" id="PreviewBasic" role="tabpanel" aria-labelledby="PreviewBasic-tab">
          <div class="contents bg-light p-5">
-              <div class="row">
-                <div class="col-md-12">
-                     <img src="/images/boolean-chart.png"class="img-thumbnail w-50">
-                </div>
-              </div>
-          </div>
+            <div class="row">  
+               <div class="col-md-12">
+                   <img src="/images/bubble-chart.png" class="img-fluid w-50">
+               </div>                          
+            </div>
+                       
+  </div>
         </div>
         <div class="tab-pane fade show" id="AngularBasic" role="tabpanel" aria-labelledby="AngularBasic-tab">
           <div class="contents bg-code">
 <div class="row m-0">
 
-
 ```html
-  <rds-chart-bool
-  [chartWidth]="300"
+<rds-chart-bubble
+  [chartWidth]="500"
+  [chartHeight]="400"
   [chartLabels]="chartLabels"
-  centerIconName=""
-  [ChartDataSets]="ChartDataSets"
-  chartType="doughnut"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
-></rds-chart-bool>
+></rds-chart-bubble>
 ```
 </div>
 </div>

@@ -18,9 +18,9 @@ title: "Pages > Audit-logs"
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <!-- <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -37,12 +37,7 @@ title: "Pages > Audit-logs"
           <div class="contents bg-code">
 <div class="row m-0">
 
-```html
-<rds-comp-audit-logs
-  [operationLogsHeaders]="operationLogsHeaders"
-  [operationLogs]="operationLogs"
-></rds-comp-audit-logs>
-```
+
 </div>
 </div>
   </div>

@@ -1,7 +1,7 @@
 ---
-slug: "/chart-mixed"
+slug: "/chart-radar"
 date: "2019-05-04"
-title: "Charts > Chart-mixed"
+title: "Charts > Chart-radar"
 ---
 
 <!-- CSS only -->
@@ -9,9 +9,9 @@ title: "Charts > Chart-mixed"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-#### Mixed Chart
+#### Radar Chart 
 
-<p class="">Mixed chart is the combination two chart types that are bar and line containing multiple data sets. It helps in the differentiating different types of data in a single chart.</p>
+<p class="">Radar chart shows the variation of the two or more datasets with respect to multiple variables.</p>
 
 <section class="py-4">
     <h6>Default</h6>
@@ -22,16 +22,16 @@ title: "Charts > Chart-mixed"
             <button class="nav-link active" id="Preview-tab" data-bs-toggle="tab" data-bs-target="#Preview" type="button" role="tab" aria-controls="Preview" aria-selected="true">Preview </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Angular-tab" data-bs-toggle="tab" data-bs-target="#Angular" type="button" role="tab" aria-controls="angular" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+            <button class="nav-link" id="Angular-tab" data-bs-toggle="tab" data-bs-target="#Angular" type="button" role="tab" aria-controls="Angular" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
         <div class="tab-pane fade show active" id="Preview" role="tabpanel" aria-labelledby="Preview-tab">
-          <div class="contents p-5">                                            
+         <div class="contents p-5">                                            
             <div class="row">
-              <div class="col-md-12">
-                <img src="/images/mixed-chart1.png" class="img-fluid">
+              <div class="col-md-6 col-12">
+                <img src="/images/radar-chart.png" class="img-fluid">
               </div> 
             </div>
           </div>
@@ -41,12 +41,13 @@ title: "Charts > Chart-mixed"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-chart-mixed
-  [chartWidth]="500"
+<rds-chart-radar
+  [chartWidth]="400"
+  [chartHeight]="400"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
-></rds-chart-mixed>
+></rds-chart-radar>
 ```
 
 </div>
@@ -55,6 +56,7 @@ title: "Charts > Chart-mixed"
       </div>
     </div>
   </section>
+
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

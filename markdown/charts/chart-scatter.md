@@ -43,8 +43,9 @@ title: "Charts > Chart-scatter"
 ```html
 <rds-chart-scatter
   [chartWidth]="500"
+  [chartHeight]="400"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-scatter>
 ```
@@ -86,8 +87,9 @@ title: "Charts > Chart-scatter"
 ```html
 <rds-chart-scatter
   [chartWidth]="500"
+  [chartHeight]="400"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
 ></rds-chart-scatter>
 ```

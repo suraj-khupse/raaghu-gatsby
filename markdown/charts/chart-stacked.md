@@ -1,7 +1,7 @@
 ---
-slug: "/chart-polar-area"
+slug: "/chart-stacked"
 date: "2019-05-04"
-title: "Charts > Chart-polar-area"
+title: "Charts > Chart-stacked"
 ---
 
 <!-- CSS only -->
@@ -9,53 +9,52 @@ title: "Charts > Chart-polar-area"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-#### Polar Area Chart 
+#### Stacked Chart
 
-<p class="">Polar chart is an extension of pie chart having varying radius of the segments representing the scales of value of content.</p>
+<p class="">A stacked chart represents the changes and trends over the period of time.</p>
 
 <section class="py-4">
-    <h6>Default</h6>
+<h6>Default</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="Preview-tab" data-bs-toggle="tab" data-bs-target="#Preview" type="button" role="tab" aria-controls="Preview" aria-selected="true">Preview </button>
+            <button class="nav-link active" id="PreviewBasic-tab" data-bs-toggle="tab" data-bs-target="#PreviewBasic" type="button" role="tab" aria-controls="PreviewBasic" aria-selected="true">Preview </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Angular-tab" data-bs-toggle="tab" data-bs-target="#Angular" type="button" role="tab" aria-controls="angular" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
-        <div class="tab-pane fade show active" id="Preview" role="tabpanel" aria-labelledby="Preview-tab">
+        <div class="tab-pane fade show active" id="PreviewBasic" role="tabpanel" aria-labelledby="PreviewBasic-tab">
           <div class="contents p-5">                                            
             <div class="row">
-              <div class="col-md-12">
-                <img src="/images/polar-area-chart1.png" class="img-fluid w-50">
+              <div class="col-md-6 col-12">
+                <img src="/images/stacked-chart.png" class="img-fluid">
               </div> 
             </div>
           </div>
         </div>
-        <div class="tab-pane fade show" id="Angular" role="tabpanel" aria-labelledby="Angular-tab">
+        <div class="tab-pane fade show" id="AngularBasic" role="tabpanel" aria-labelledby="AngularBasic-tab">
           <div class="contents bg-code">
 <div class="row  m-0 p-4">
 
 ```html
-<rds-chart-polar-area
-  [chartWidth]="400"
+<rds-chart-stacked
+  [chartWidth]="1000"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
-></rds-chart-polar-area>
-
+></rds-chart-stacked>
 ```
+
 </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,7 +1,7 @@
 ---
-slug: "/chart-radar"
+slug: "/chart-doughnut"
 date: "2019-05-04"
-title: "Charts > Chart-radar"
+title: "Charts > Chart-doughnut"
 ---
 
 <!-- CSS only -->
@@ -9,12 +9,12 @@ title: "Charts > Chart-radar"
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/style-elements.css">
 <link rel="stylesheet" href="../../../../../../../raaghu/src/assets/css/main.css">
 
-#### Radar Chart 
+#### Doughnut Chart
 
-<p class="">Radar chart shows the variation of the two or more datasets with respect to multiple variables.</p>
+<p class="">Donut chart typically displays the percentages of categorical data, with the proportion of each category being communicated by the size of each component of the donut.</p>
 
 <section class="py-4">
-    <h6>Default</h6>
+     <h6>Default</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -28,10 +28,10 @@ title: "Charts > Chart-radar"
       </div>
       <div class="tab-content card border" id="myTabContent">
         <div class="tab-pane fade show active" id="Preview" role="tabpanel" aria-labelledby="Preview-tab">
-         <div class="contents p-5">                                            
+          <div class="contents p-5">
             <div class="row">
-              <div class="col-md-6 col-12">
-                <img src="/images/radar-chart.png" class="img-fluid">
+              <div class="col-md-12">
+                <img src="/images/doughnut-chart.png" class="img-fluid w-50">                                             
               </div> 
             </div>
           </div>
@@ -41,12 +41,14 @@ title: "Charts > Chart-radar"
 <div class="row  m-0 p-4">
 
 ```html
-<rds-chart-radar
-  [chartWidth]="400"
+<rds-chart-doughnut
+  [chartWidth]="300"
   [chartLabels]="chartLabels"
-  [ChartDataSets]="ChartDataSets"
+  [chartDataSets]="chartDataSets"
   [chartOptions]="chartOptions"
-></rds-chart-radar>
+  titleText="Title"
+  subTitleText="Sub-title"
+></rds-chart-doughnut>
 ```
 
 </div>
@@ -55,7 +57,6 @@ title: "Charts > Chart-radar"
       </div>
     </div>
   </section>
-
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
