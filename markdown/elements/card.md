@@ -26,6 +26,9 @@ title: "Elements > Card"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -67,6 +70,28 @@ title: "Elements > Card"
 </div>
 </div>
   </div>
+  <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsCard
+  borderColor=""
+  buttonLabel="Button"
+  cardText="Some quick example text to build on the card title and make up the bulk of the card's content."
+  cardTitle="Card title"
+  colorVariant="primary"
+  showFooter
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
         </div>
       </div>
     </div>
@@ -84,6 +109,9 @@ title: "Elements > Card"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularWithAvtar-tab" data-bs-toggle="tab" data-bs-target="#AngularWithAvtar" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactAvatar-tab" data-bs-toggle="tab" data-bs-target="#ReactAvatar" type="button" role="tab" aria-controls="ReactAvatar" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -146,6 +174,32 @@ title: "Elements > Card"
 </div>
 </div>
   </div>
+  
+  <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactAvatar" role="tabpanel" aria-labelledby="ReactAvatar-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsCard
+  avatarUrl="https://placekitten.com/300/300"
+  buttonLabel="Button"
+  cardText="Some quick example text to build on the card title and make up the bulk of the card's content."
+  cardTitle="Card title"
+  colorVariant="primary"
+  imageUrl="https://picsum.photos/seed/picsum/1200/600"
+  isAvatar
+  isImage
+  showFooter
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
         </div>
       </div>
     </div>
@@ -160,7 +214,10 @@ title: "Elements > Card"
             <button class="nav-link active" id="PreviewImage-tab" data-bs-toggle="tab" data-bs-target="#PreviewImage" type="button" role="tab" aria-controls="PreviewImage" aria-selected="true">Preview </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+            <button class="nav-link" id="AngularImage-tab" data-bs-toggle="tab" data-bs-target="#AngularImage" type="button" role="tab" aria-controls="AngularImage" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactCardImg-tab" data-bs-toggle="tab" data-bs-target="#ReactCardImg" type="button" role="tab" aria-controls="ReactCardImg" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -173,7 +230,7 @@ title: "Elements > Card"
               </div>
              </div>
         </div>
-        <div class="tab-pane fade show" id="AngularBasic" role="tabpanel" aria-labelledby="AngularBasic-tab">
+        <div class="tab-pane fade show" id="AngularImage" role="tabpanel" aria-labelledby="AngularImage-tab">
           <div class="contents bg-code">
 <div class="row m-0">
 
@@ -209,6 +266,29 @@ title: "Elements > Card"
 </div>
 </div>
   </div>
+   <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactCardImg" role="tabpanel" aria-labelledby="ReactCardImg-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsCard
+  buttonLabel="Button"
+  cardText="Some quick example text to build on the card title and make up the bulk of the card's content."
+  cardTitle="Card title"
+  colorVariant="primary"
+  imageUrl="https://picsum.photos/seed/picsum/1200/600"
+  isImage
+  showFooter
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
         </div>
       </div>
     </div>
@@ -222,10 +302,13 @@ title: "Elements > Card"
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="PreviewWithAvtarCenter-tab" data-bs-toggle="tab" data-bs-target="#PreviewWithAvtar" type="button" role="tab" aria-controls="PreviewWithAvtarCenter" aria-selected="true">Preview </button>
+            <button class="nav-link active" id="PreviewWithAvtarCenter-tab" data-bs-toggle="tab" data-bs-target="#PreviewWithAvtarCenter" type="button" role="tab" aria-controls="PreviewWithAvtarCenter" aria-selected="true">Preview </button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularWithAvtarCenter-tab" data-bs-toggle="tab" data-bs-target="#AngularWithAvtarCenter" type="button" role="tab" aria-controls="AngularWithAvtarCenter" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactCenterAvatar-tab" data-bs-toggle="tab" data-bs-target="#ReactCenterAvatar" type="button" role="tab" aria-controls="ReactCenterAvatar" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -293,6 +376,30 @@ title: "Elements > Card"
 
   </div>
         </div>
+        <!-- React start -->
+        <div class="tab-pane fade show" id="ReactCenterAvatar" role="tabpanel" aria-labelledby="ReactCenterAvatar-tab">
+          <div class="contents bg-code">
+    <div class="row m-0">
+
+```html
+<RdsCard
+  avatarUrl="https://placekitten.com/300/300"
+  buttonLabel="Button"
+  cardText="Some quick example text to build on the card title and make up the bulk of the card's content."
+  cardTitle="Card title"
+  centerAlign
+  colorVariant="primary"
+  imageUrl="https://picsum.photos/seed/picsum/1200/600"
+  isAvatar
+  isImage
+  showFooter
+/>
+```
+
+</div>
+          </div>
+        </div>
+      <!-- React End -->
       </div>
     </div>
   </section>

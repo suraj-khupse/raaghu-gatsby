@@ -24,6 +24,9 @@ title: "Elements > Fab-Menu"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -54,6 +57,66 @@ title: "Elements > Fab-Menu"
 </div>
 </div>
   </div>
+  <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsFabMenu
+  colorVariant="primary"
+  listItems={[
+    {
+      icon: 'users',
+      iconHeight: '20px',
+      iconWidth: '20px',
+      key: 'new',
+      some: 'value',
+      value: 'New Role'
+    },
+    {
+      icon: 'refresh',
+      iconHeight: '20px',
+      iconWidth: '20px',
+      key: 'refresh',
+      some: 'value',
+      value: 'Refresh'
+    },
+    {
+      icon: 'export',
+      iconHeight: '20px',
+      iconWidth: '20px',
+      key: 'export',
+      some: 'value',
+      value: 'Export to excel'
+    },
+    {
+      icon: 'delete',
+      iconHeight: '20px',
+      iconWidth: '20px',
+      key: 'delete',
+      some: 'value',
+      value: 'Delete'
+    },
+    {
+      icon: 'download',
+      iconHeight: '20px',
+      iconWidth: '20px',
+      key: 'download',
+      some: 'value',
+      value: 'Click here download sample import file.'
+    }
+  ]}
+/>
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
         </div>
       </div>
     </div>

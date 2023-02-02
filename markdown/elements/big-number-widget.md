@@ -25,6 +25,9 @@ title: "Elements > Big-number-widget"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactDefault-tab" data-bs-toggle="tab" data-bs-target="#ReactDefault" type="button" role="tab" aria-controls="ReactDefault" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -62,6 +65,26 @@ title: "Elements > Big-number-widget"
 </div>
 </div>
   </div>
+       <!-- React start -->
+             <div class="tab-pane fade show" id="ReactDefault" role="tabpanel" aria-labelledby="ReactDefault-tab">
+          <div class="contents bg-code">
+<div class="row m-0">
+
+```html
+<RdsButton colorVariant="primary" label="Button" type="button">
+  <RdsBadge
+    badgeType="rectangle"
+    colorVariant="danger"
+    label="9"
+    size="medium"
+  />
+</RdsButton>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
         </div>
       </div>
     </div>

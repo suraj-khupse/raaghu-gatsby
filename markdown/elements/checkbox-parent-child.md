@@ -23,6 +23,9 @@ title: "Elements > Checkbox-parent-child"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -51,6 +54,84 @@ title: "Elements > Checkbox-parent-child"
 </div>
 </div>
   </div>
+  <!-- React start -->
+        <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code">
+    <div class="row m-0">
+
+```html
+<RdsCheckboxParentChild
+  userData={[
+    {
+      childList: [
+        {
+          disabled: false,
+          id: 1,
+          isSelected: false,
+          label: 'Child Checkbox 1',
+          parent_id: 1
+        },
+        {
+          disabled: false,
+          id: 2,
+          isSelected: false,
+          label: 'Child Checkbox 2',
+          parent_id: 1
+        },
+        {
+          disabled: false,
+          id: 3,
+          isSelected: false,
+          label: 'Child Checkbox 3',
+          parent_id: 1
+        },
+        {
+          disabled: false,
+          id: 4,
+          isSelected: false,
+          label: 'Child Checkbox 4',
+          parent_id: 1
+        }
+      ],
+      disabled: false,
+      id: 1,
+      isIntermediate: false,
+      isSelected: false,
+      label: 'Parent Checkbox 1'
+    },
+    {
+      childList: [
+        {
+          disabled: false,
+          id: 1,
+          isSelected: true,
+          label: 'Child Checkbox 1',
+          parent_id: 2
+        },
+        {
+          disabled: false,
+          id: 2,
+          isSelected: true,
+          label: 'Child Checkbox 2',
+          parent_id: 2
+        }
+      ],
+      disabled: false,
+      id: 2,
+      isClosed: false,
+      isIntermediate: false,
+      isSelected: false,
+      label: 'Parent Checkbox 2'
+    }
+  ]}
+ />
+/>
+```
+
+</div>
+          </div>
+        </div>
+      <!-- React End -->
         </div>
       </div>
     </div>

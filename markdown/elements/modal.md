@@ -27,6 +27,9 @@ title: "Elements > Modal"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selec0ted="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+             <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -86,6 +89,34 @@ title: "Elements > Modal"
 </div>
 </div>
   </div>
+  <!-- React Start -->
+        <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+<>
+  <RdsModal
+    cancelButtonName="Close"
+    modalAnimation="modal fade"
+    modalId="modal1"
+    modalTitle="Title"
+    modalbutton={<button className="btn btn-primary">Default</button>}
+    saveChangesName="Save Changes"
+    showModalFooter
+    showModalHeader
+  >
+    <p>
+      This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text the modal, we use an inline style set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.
+    </p>
+  </RdsModal>
+</>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
         </div>
       </div>
     </div>
@@ -162,7 +193,13 @@ title: "Elements > Modal"
     </button>
   </div>
 </rds-modal>
-   
+```
+ </div>
+     </div>
+        </div>
+      </div>
+    </div>
+   </section>
 <!-- Long Content Modal -->
 
 <section class="py-4">

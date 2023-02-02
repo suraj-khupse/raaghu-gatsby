@@ -23,6 +23,9 @@ title: "Elements > Label"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+               <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -46,6 +49,23 @@ title: "Elements > Label"
 </div>
 </div>
   </div>
+    <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsLabel
+  label="Label"
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
         </div>
       </div>
     </div>
@@ -62,6 +82,9 @@ title: "Elements > Label"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactMulti-tab" data-bs-toggle="tab" data-bs-target="#ReactMulti" type="button" role="tab" aria-controls="ReactMulti" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -98,6 +121,24 @@ title: "Elements > Label"
 </div>
 </div>
   </div>
+    <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactMulti" role="tabpanel" aria-labelledby="ReactMulti-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsLabel
+  label="Label"
+  multiline
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
         </div>
       </div>
     </div>

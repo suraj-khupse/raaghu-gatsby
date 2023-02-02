@@ -62,12 +62,12 @@ title: "Elements > Badge"
 <div class="row text-white m-0 p-4">
 
 ```html
-<rds-badge
-  size="medium"
-  label="badge"
+<RdsBadge
   badgeType="rectangle"
   colorVariant="danger"
-></rds-badge>
+  label="Badge"
+  size="medium"
+/>
 ```
 
 </div>

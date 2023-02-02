@@ -23,6 +23,9 @@ title: "Elements > Carousel"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -52,6 +55,39 @@ title: "Elements > Carousel"
 </div>
 </div>
   </div>
+       <!-- React start -->
+        <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code">
+    <div class="row m-0">
+
+```html
+<RdsCarousel
+  Indicators
+  carouselItems={[
+    {
+      id: 1,
+      imgUrl: 'https://cdn.londonandpartners.com/visit/london-organisations/tower-bridge/86830-640x360-tower-bridge-640.jpg',
+      name: 'Sam Smith',
+      roleName: 'Product Manager',
+      subTitle: 'Nulla metus metus ullamcorper vel tincidunt set euismod nibh quisque volutpat condimentum veilt class patent taciti sociosqu and litara ad litora torquent per conubia nastra.'
+    },
+    {
+      id: 2,
+      imgUrl: 'https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/sightseeing/london-attractions/coca-cola-london-eye/the-london-eye-2-640x360.jpg?mw=640&hash=F7D574072DAD523443450DF57E3B91530064E4EE',
+      name: 'king John',
+      roleName: 'Tech Lead',
+      subTitle: 'this is the caption section were u can add the caption for the image'
+    }
+  ]}
+  controls
+  crossFade
+/>
+```
+
+</div>
+          </div>
+        </div>
+      <!-- React End -->
         </div>
       </div>
     </div>
@@ -67,6 +103,9 @@ title: "Elements > Carousel"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularAdvance-tab" data-bs-toggle="tab" data-bs-target="#AngularAdvance" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactAdvance-tab" data-bs-toggle="tab" data-bs-target="#ReactAdvance" type="button" role="tab" aria-controls="ReactAdvance" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -98,6 +137,30 @@ title: "Elements > Carousel"
 </div>
 </div>
   </div>
+     <!-- React start -->
+        <div class="tab-pane fade show" id="ReactAdvance" role="tabpanel" aria-labelledby="ReactAdvance-tab">
+          <div class="contents bg-code">
+    <div class="row m-0">
+
+```html
+<RdsCard
+  avatarUrl="https://placekitten.com/300/300"
+  buttonLabel="Button"
+  cardText="Some quick example text to build on the card title and make up the bulk of the card's content."
+  cardTitle="Card title"
+  centerAlign
+  colorVariant="primary"
+  imageUrl="https://picsum.photos/seed/picsum/1200/600"
+  isAvatar
+  isImage
+  showFooter
+/>
+```
+
+</div>
+          </div>
+        </div>
+      <!-- React End -->
         </div>
       </div>
     </div>

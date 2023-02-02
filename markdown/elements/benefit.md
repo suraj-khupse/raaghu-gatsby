@@ -23,6 +23,9 @@ title: "Elements > Benefit"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -47,13 +50,39 @@ title: "Elements > Benefit"
 </div>
 </div>
   </div>
+  <!-- React Start -->
+  <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+  <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+    <RdsBenefit
+    displayType="default"
+    item={{
+    description: 'Get your order in 2 days',
+    icon: 'currency_dollar_circle',
+    iconColorVarient: 'dark',
+    iconFill: false,
+    iconHeight: '35px',
+    iconWidth: '35px',
+    iconstroke: true,
+    id: 1,
+    title: 'International delivery'
+  }}
+/>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
         </div>
       </div>
     </div>
   </section>
    
    <section class="py-4">
-    <h6>With Illustrations Centre Aligned</h6>
+    <h6>With Illustrations Centre Align</h6>
     <div class="py-3">
       <div class="cust-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -62,6 +91,9 @@ title: "Elements > Benefit"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab1" data-bs-toggle="tab" data-bs-target="#AngularBasic1" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactCentre" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -87,6 +119,32 @@ title: "Elements > Benefit"
 </div>
 </div>
   </div>
+  <!-- React Start -->
+        <div class="tab-pane fade show" id="ReactCentre" role="tabpanel" aria-labelledby="ReactBasic-tab">
+          <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+<RdsBenefit
+  displayType="Center Aligned"
+  item={{
+    description: 'Free delivery is our main part of company we just price it into the products. Someone\'s paying for it, and it\'s not us.',
+    icon: 'truck',
+    iconColorVarient: 'dark',
+    iconFill: false,
+    iconHeight: '40px',
+    iconWidth: '40px',
+    iconstroke: true,
+    id: 6,
+    title: 'Free shipping'
+  }}
+/>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
         </div>
       </div>
     </div>
@@ -105,6 +163,9 @@ title: "Elements > Benefit"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic2-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic2" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactLabel-tab" data-bs-toggle="tab" data-bs-target="#ReactLabel" type="button" role="tab" aria-controls="ReactLabel" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -131,6 +192,32 @@ title: "Elements > Benefit"
 </div>
 </div>
   </div>
+  <!-- React Start -->
+        <div class="tab-pane fade show" id="ReactLabel" role="tabpanel" aria-labelledby="ReactLabel-tab">
+          <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+<RdsBenefit
+  displayType="Center Aligned"
+  item={{
+    description: 'Free delivery is our main part of company we just price it into the products. Someone\'s paying for it, and it\'s not us.',
+    icon: 'truck',
+    iconColorVarient: 'dark',
+    iconFill: false,
+    iconHeight: '40px',
+    iconWidth: '40px',
+    iconstroke: true,
+    id: 6,
+    title: 'Free shipping'
+  }}
+/>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
         </div>
       </div>
     </div>
@@ -146,6 +233,9 @@ title: "Elements > Benefit"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic3-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic3" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactLeft-tab" data-bs-toggle="tab" data-bs-target="#ReactLeft" type="button" role="tab" aria-controls="ReactLeft" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -170,6 +260,29 @@ title: "Elements > Benefit"
 </div>
 </div>
   </div>
+   <!-- React Start -->
+        <div class="tab-pane fade show" id="ReactLeft" role="tabpanel" aria-labelledby="ReactLeft-tab">
+          <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+<RdsBenefit
+  displayType="Left Aligned"
+  item={{
+    description: 'Name another place that offers year long free delivery? We\'ll be waiting. Order now and you\'ll get delivery absolutely free.',
+    id: 3,
+    imgHeight: '40px',
+    imgSrc: 'https://cdn4.vectorstock.com/i/1000x1000/45/38/gear-icon-line-symbol-vector-21084538.jpg',
+    imgWidth: '40px',
+    title: 'Free delivery all year long'
+  }}
+/>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
         </div>
       </div>
     </div>
@@ -184,6 +297,9 @@ title: "Elements > Benefit"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic4-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic4" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="Reactwithlabel-tab" data-bs-toggle="tab" data-bs-target="#Reactwithlabel" type="button" role="tab" aria-controls="Reactwithlabel" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -208,6 +324,31 @@ title: "Elements > Benefit"
 </div>
 </div>
   </div>
+          <!-- React Start -->
+        <div class="tab-pane fade show" id="Reactwithlabel" role="tabpanel" aria-labelledby="Reactwithlabel-tab">
+          <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+<RdsBenefit
+  displayType="With Label"
+  item={{
+    colorVarient: 'success',
+    description: 'Name another place that offers year long free delivery? We\'ll be waiting. Order now and you\'ll get delivery absolutely free.',
+    id: 7,
+    imgHeight: '40px',
+    imgSrc: 'https://cdn4.vectorstock.com/i/1000x1000/45/38/gear-icon-line-symbol-vector-21084538.jpg',
+    imgWidth: '40px',
+    status: 'Active',
+    title: 'Free delivery all year long'
+  }}
+/>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
         </div>
       </div>
     </div>
@@ -225,6 +366,9 @@ title: "Elements > Benefit"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic5-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic5" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactWitoutLabel-tab" data-bs-toggle="tab" data-bs-target="#ReactWitoutLabel" type="button" role="tab" aria-controls="ReactWitoutLabel" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -244,11 +388,37 @@ title: "Elements > Benefit"
 <div class="row m-0">
 
 ```html
-  <rds-benefit [item]="item" display_type="Label Centred Align"></rds-benefit>
+  <rds-benefit [item]="item" display_type="Without Label"></rds-benefit>
 ```
 </div>
 </div>
   </div>
+  <!-- React Start -->
+        <div class="tab-pane fade show" id="ReactWitoutLabel" role="tabpanel" aria-labelledby="ReactWitoutLabel-tab">
+          <div class="contents bg-code ">
+<div class="row text-white m-0 p-4">
+
+```html
+<RdsBenefit
+  displayType="Without Label"
+  item={{
+    description: 'Free delivery is our main part of company',
+    icon: 'truck',
+    iconColorVarient: 'dark',
+    iconFill: false,
+    iconHeight: '40px',
+    iconWidth: '40px',
+    iconstroke: true,
+    id: 7,
+    title: 'Free shipping world wide'
+  }}
+/>
+```
+
+</div>
+          </div>
+        </div>
+<!-- React end -->
         </div>
       </div>
     </div>

@@ -24,6 +24,9 @@ title: "Elements > File-uploader"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -52,6 +55,25 @@ title: "Elements > File-uploader"
 </div>
           </div>
         </div>
+          <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsFileUploader
+  colorVariant="dark"
+  extensions=""
+  size="mid"
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
@@ -66,6 +88,9 @@ title: "Elements > File-uploader"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="angularmultiple-tab" data-bs-toggle="tab" data-bs-target="#angularmultiple" type="button" role="tab" aria-controls="angularmultiple" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactAdvance-tab" data-bs-toggle="tab" data-bs-target="#ReactAdvance" type="button" role="tab" aria-controls="ReactAdvance" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -96,6 +121,27 @@ title: "Elements > File-uploader"
 </div>
           </div>
         </div>
+          <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactAdvance" role="tabpanel" aria-labelledby="ReactAdvance-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsFileUploader
+  colorVariant="primary"
+  extensions=""
+  limit={5}
+  multiple
+  placeholder="for E.g. "
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>

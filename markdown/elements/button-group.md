@@ -26,6 +26,9 @@ title: "Elements > Button-group"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularBasic-tab" data-bs-toggle="tab" data-bs-target="#AngularBasic" type="button" role="tab" aria-controls="AngularBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactBasic-tab" data-bs-toggle="tab" data-bs-target="#ReactBasic" type="button" role="tab" aria-controls="ReactBasic" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -52,6 +55,42 @@ title: "Elements > Button-group"
 </div>
           </div>
         </div>
+        <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactBasic" role="tabpanel" aria-labelledby="ReactBasic-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsButtonGroup
+  buttonGroupItems={[
+    {
+      id: '',
+      label: 'Left',
+      name: ''
+    },
+    {
+      id: '',
+      label: 'Middle',
+      name: ''
+    },
+    {
+      id: '',
+      label: 'Right',
+      name: ''
+    }
+  ]}
+  colorVariant="primary"
+  role="button"
+  size="medium"
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
@@ -70,6 +109,9 @@ title: "Elements > Button-group"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularCheckboxButton-tab" data-bs-toggle="tab" data-bs-target="#AngularCheckboxButton" type="button" role="tab" aria-controls="AngularCheckboxButton" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactCheckbox-tab" data-bs-toggle="tab" data-bs-target="#ReactCheckbox" type="button" role="tab" aria-controls="ReactCheckbox" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -100,6 +142,43 @@ title: "Elements > Button-group"
 </div>
           </div>
         </div>
+ <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactCheckbox" role="tabpanel" aria-labelledby="ReactCheckbox-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsButtonGroup
+  buttonGroupItems={[
+    {
+      id: 'checkbox1',
+      label: 'Checkbox 1',
+      name: ''
+    },
+    {
+      id: 'checkbox2',
+      label: 'Checkbox 2',
+      name: ''
+    },
+    {
+      id: 'checkbox3',
+      label: 'Checkbox 3',
+      name: ''
+    }
+  ]}
+  colorVariant="primary"
+  isOutline
+  role="checkbox"
+  size="medium"
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
@@ -161,6 +240,9 @@ title: "Elements > Button-group"
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularRadio-tab" data-bs-toggle="tab" data-bs-target="#AngularRadio" type="button" role="tab" aria-controls="AngularRadio" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
           </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactRadio-tab" data-bs-toggle="tab" data-bs-target="#ReactRadio" type="button" role="tab" aria-controls="ReactRadio" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
+          </li>
         </ul>
       </div>
       <div class="tab-content card border" id="myTabContent">
@@ -189,6 +271,43 @@ title: "Elements > Button-group"
 </div>
           </div>
         </div>
+             <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactRadio" role="tabpanel" aria-labelledby="ReactRadio-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsButtonGroup
+  buttonGroupItems={[
+    {
+      id: 'radio1',
+      label: 'radio1',
+      name: 'btnradio'
+    },
+    {
+      id: 'radio2',
+      label: 'radio2',
+      name: 'btnradio'
+    },
+    {
+      id: 'radio3',
+      label: 'radio3',
+      name: 'btnradio'
+    }
+  ]}
+  colorVariant="primary"
+  isOutline
+  role="radio"
+  size="medium"
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
@@ -205,6 +324,9 @@ title: "Elements > Button-group"
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="AngularVertical-tab" data-bs-toggle="tab" data-bs-target="#AngularVertical" type="button" role="tab" aria-controls="AngularVertical" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>Angular</button>
+          </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ReactVertical-tab" data-bs-toggle="tab" data-bs-target="#ReactVertical" type="button" role="tab" aria-controls="ReactVertical" aria-selected="false"><i class="bi bi-code-slash" style="font-size:1.0rem"></i>React</button>
           </li>
         </ul>
       </div>
@@ -233,6 +355,43 @@ title: "Elements > Button-group"
 </div>
           </div>
         </div>
+        <!-- React start -->
+
+  <div class="tab-pane fade show" id="ReactVertical" role="tabpanel" aria-labelledby="ReactVertical-tab">
+    <div class="contents bg-code">
+
+<div class="row m-0">
+
+```html
+<RdsButtonGroup
+  buttonGroupItems={[
+    {
+      id: '',
+      label: 'Left',
+      name: ''
+    },
+    {
+      id: '',
+      label: 'Middle',
+      name: ''
+    },
+    {
+      id: '',
+      label: 'Right',
+      name: ''
+    }
+  ]}
+  colorVariant="primary"
+  role="button"
+  size="medium"
+  vertical
+/>
+```
+
+</div>
+          </div>
+        </div>
+        <!-- React end -->
       </div>
     </div>
   </section>
